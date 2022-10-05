@@ -1,5 +1,7 @@
 # devcareer-frontend-hacktoberfest-challenge
 This repository houses few challenges gotten from [frontend mentors](https://www.frontendmentor.io/) platform which mentees would be working on and would also be participating on the hacktoberfest challenge
+<br />
+All Challenges can be found in [issues](https://github.com/joshtom/devcareer-frontend-hacktoberfest-challenge/issues)
 
  
 
