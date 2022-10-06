@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+border-radius: 50%;
+}
+
+.card-header {
+    display: flex;
+}
+
+.card-1 {
+background-color: hsl(263, 55%, 52%);
+}
+
+.card-2 {
+background-color: hsl(210, 46%, 95%);
+}
