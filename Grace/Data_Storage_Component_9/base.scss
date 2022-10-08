@@ -68,6 +68,8 @@ body{
     border-radius: 10px;
     color: #c6c5c5;
     position: relative;
+    
+    h1{font-size: $text-size;}
 
     div:first-child {
         display: flex;

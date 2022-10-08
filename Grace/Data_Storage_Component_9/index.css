@@ -55,6 +55,9 @@ body {
   color: #c6c5c5;
   position: relative;
 }
+.main h1 {
+  font-size: 0.875em;
+}
 .main div:first-child {
   display: flex;
   flex-flow: column nowrap;
