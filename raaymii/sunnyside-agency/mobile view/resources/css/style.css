@@ -46,14 +46,63 @@
     height: 100vh;
     padding: 2rem;
   }
+  /* Mobile Nav */
+  .mobile-nav {
+    background-color: white;
+    position: absolute;
+    top: 6rem;
+    margin-right: 1rem;
+    padding: 2rem 5.5rem;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    transform: translateY(100%);
+
+    /* Hide it visually */
+    opacity: 0;
+    /* Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Hide it from screen readers */
+    visibility: hidden;
+  }
   .main-nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.8rem;
   }
 
   .main-nav li {
     list-style: none;
+  }
+
+  .main-nav li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  .nav-open .mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-cta {
+    background-color: rgb(233, 201, 17);
+    color: black;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+  .btn-mobile-nav {
+    display: inline-block;
+    position: relative;
+    left: 10rem;
+    top: -0.5rem;
   }
 
   .arrow {
@@ -71,7 +120,8 @@
   }
 
   .mobile-transform {
-    margin: 1.7rem;
+    margin: 1.2rem;
+    text-align: center;
   }
 
   .mobile-transform h2 {
@@ -87,7 +137,7 @@
   }
 
   .mobile-transform a {
-    display: block;
+    display: inline-block;
     text-transform: uppercase;
     font-weight: 800;
     border-bottom: 3px solid rgb(247, 222, 113);
@@ -95,8 +145,7 @@
     font-size: 1.3rem;
     color: black;
     font-family: "Fraunces", serif;
-    margin-top: 2rem;
-    text-align: center;
+    margin-top: 5rem;
   }
 
   .mobile-pink {
@@ -135,6 +184,7 @@
   .mobile-graphic p {
     font-size: 1.1rem;
     display: block;
+    line-height: 1.15;
   }
 
   .section-photography {
@@ -147,8 +197,13 @@
     padding: 1.5rem;
   }
 
+  .mobile-photography {
+    color: hsl(198, 62%, 26%);
+  }
+
   .section-testimonials {
     padding: 1.8rem;
+    text-align: center;
   }
 
   .section-testimonials h3 {
@@ -209,19 +264,20 @@
   footer {
     background-color: hsl(167, 73%, 67%);
     padding: 2.4rem;
+    height: 40vh;
   }
   .footer-container {
     text-align: center;
     display: block;
   }
-
   .footer-nav {
-    text-align: center;
-    /* display: block; */
+    margin-top: 3rem;
   }
+
   .footer-nav a {
     text-decoration: none;
     color: hsl(167, 40%, 24%);
+    font-size: 1.1rem;
   }
   .footer-nav li {
     list-style: none;
@@ -230,14 +286,16 @@
     display: flex;
     flex-direction: row;
     gap: 1.1rem;
+    justify-content: center;
   }
   .mobile-social {
-    text-align: center;
+    margin-top: 3rem;
   }
   .social-links {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    justify-content: center;
   }
   .social-links li {
     list-style: none;

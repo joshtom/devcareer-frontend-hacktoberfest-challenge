@@ -14,19 +14,23 @@
     <title>Sunnyside Agency Mobile view</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <a href="#">
+        <img src="/resources/images/logo.svg" alt="logo" class="logo"
+      /></a>
       <nav class="mobile-nav">
         <ul class="main-nav">
-          <li>
-            <img src="/resources/images/logo.svg" alt="logo" class="logo" />
-          </li>
-          <li><img src="/resources/images/icon-hamburger.svg" alt="" /></li>
+          <li class="main-nav-link"><a href="#">About</a></li>
+          <li class="main-nav-link"><a href="#">Services</a></li>
+          <li class="main-nav-link"><a href="#">Projects</a></li>
+          <li class="main-nav-link nav-cta"><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <h1>
-        We are <br />
-        creatives
-      </h1>
+
+      <div class="btn-mobile-nav">
+        <img src="/resources/images/icon-hamburger.svg" alt="" />
+      </div>
+      <h1>We are creatives</h1>
       <div class="arrow">
         <img src="/resources/images/icon-arrow-down.svg" alt="" />
       </div>
@@ -71,7 +75,7 @@
     </section>
 
     <section class="section-photography">
-      <div class="mobile-graphic">
+      <div class="mobile-graphic mobile-photography">
         <h3>Photography</h3>
         <p>
           Increase your credibility by getting the most stunning, high-quality
@@ -81,7 +85,7 @@
     </section>
 
     <section class="section-testimonials">
-      <h3>Client Testimonials</h3>
+      <div><h3>Client Testimonials</h3></div>
       <div class="testimonials">
         <div class="emily">
           <img src="/resources/images/image-emily.jpg" alt="" />
@@ -160,5 +164,6 @@
         </div>
       </div>
     </footer>
+    <script src="/resources/js/script.js"></script>
   </body>
 </html>
