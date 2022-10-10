@@ -6,14 +6,14 @@
 }
 
 body {
-  background: url("images/bg-desktop.png") hsl(229deg, 57%, 11%);
+  background: url("../../images/bg-desktop.png") hsl(229deg, 57%, 11%);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
   font-size: 0.875em;
@@ -23,10 +23,10 @@ body {
   display: flex;
   flex-flow: column nowrap;
   background: hsl(228deg, 56%, 26%);
-  margin-top: -10em;
+  margin-top: -13em;
   gap: 2em;
-  padding: 2em 5em 2em 2em;
-  border-top-right-radius: 100px;
+  padding: 2em 7.5em 2em 2em;
+  border-top-right-radius: 90px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -49,7 +49,7 @@ body {
 
 .main {
   background: hsl(228deg, 56%, 26%);
-  margin-bottom: 6.8em;
+  margin-bottom: 9.4em;
   padding: 1.5em 2em 2em;
   border-radius: 10px;
   color: #c6c5c5;
@@ -117,7 +117,7 @@ body {
 
 @media screen and (max-width: 643px) {
   body {
-    background: url("images/bg-mobile.png");
+    background: url("../../images/bg-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -130,6 +130,7 @@ body {
   .hero {
     margin-top: 0;
     border-top-right-radius: 50px;
+    padding: 2em 5em 2em 2em;
   }
   .main {
     margin-bottom: 0;
