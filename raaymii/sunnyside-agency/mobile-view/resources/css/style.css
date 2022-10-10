@@ -1,0 +1,303 @@
+@media only screen and (min-device-width: 350px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Barlow", sans-serif;
+    font-size: 62.5%;
+    font-weight: 600;
+    max-width: 100%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Fraunces", serif;
+  }
+  h1 {
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    word-spacing: 2.5px;
+    letter-spacing: 2.5px;
+    color: white;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    font-size: 3.1rem;
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  section {
+    overflow: hidden;
+  }
+  header {
+    background-image: url(/resources/css/img/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 2rem;
+  }
+  /* Mobile Nav */
+  .mobile-nav {
+    background-color: white;
+    position: absolute;
+    top: 6rem;
+    margin-right: 1rem;
+    padding: 2rem 5.5rem;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    transform: translateY(100%);
+
+    /* Hide it visually */
+    opacity: 0;
+    /* Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* Hide it from screen readers */
+    visibility: hidden;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+
+  .main-nav li {
+    list-style: none;
+  }
+
+  .main-nav li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  .nav-open .mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-cta {
+    background-color: rgb(233, 201, 17);
+    color: black;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+  .btn-mobile-nav {
+    display: inline-block;
+    position: relative;
+    left: 10rem;
+    top: -0.5rem;
+  }
+
+  .arrow {
+    text-align: center;
+  }
+
+  .mobile-yellow {
+    height: 110vh;
+    position: relative;
+  }
+
+  .mobile-yellow img {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .mobile-transform {
+    margin: 1.2rem;
+    text-align: center;
+  }
+
+  .mobile-transform h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .mobile-transform p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.7;
+  }
+
+  .mobile-transform a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 3px solid rgb(247, 222, 113);
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Fraunces", serif;
+    margin-top: 5rem;
+  }
+
+  .mobile-pink {
+    height: 110vh;
+  }
+
+  .mobile-pink img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .section-graphic {
+    background-image: url(/resources/images/mobile/image-graphic-design.jpg);
+    height: 78vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1.5rem;
+  }
+
+  .mobile-graphic {
+    text-align: center;
+    margin-top: 47vh;
+    color: hsl(167, 40%, 24%);
+  }
+
+  .mobile-graphic h3 {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1.8rem;
+  }
+
+  .mobile-graphic p {
+    font-size: 1.1rem;
+    display: block;
+    line-height: 1.15;
+  }
+
+  .section-photography {
+    background-image: url(/resources/images/mobile/image-photography.jpg);
+    height: 78vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+  }
+
+  .mobile-photography {
+    color: hsl(198, 62%, 26%);
+  }
+
+  .section-testimonials {
+    padding: 1.8rem;
+    text-align: center;
+  }
+
+  .section-testimonials h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: rgba(0, 0, 0, 0.568);
+    font-weight: 800;
+    font-family: "Fraunces", serif;
+    font-size: 1.3rem;
+    word-spacing: 1.7px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .testimonials img {
+    border-radius: 50%;
+    height: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonials h4 {
+    font-family: "Fraunces", serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: black;
+    display: inline-block;
+    margin-top: 1.7rem;
+  }
+
+  .testimonials p {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .testimonials .roles {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.582);
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    height: 11.71rem;
+    width: 11.71rem;
+    /* width: auto; */
+  }
+  footer {
+    background-color: hsl(167, 73%, 67%);
+    padding: 2.4rem;
+    height: 40vh;
+  }
+  .footer-container {
+    text-align: center;
+    display: block;
+  }
+  .footer-nav {
+    margin-top: 3rem;
+  }
+
+  .footer-nav a {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-size: 1.1rem;
+  }
+  .footer-nav li {
+    list-style: none;
+  }
+  .mobile-footer-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.1rem;
+    justify-content: center;
+  }
+  .mobile-social {
+    margin-top: 3rem;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .social-links li {
+    list-style: none;
+  }
+}
