@@ -64,6 +64,7 @@ section {
   font-size: 1rem;
   font-weight: 800;
   font-family: "Fraunces", serif;
+  margin-top: 0.1rem;
 }
 
 .navbar-link:last-child:hover,
@@ -90,22 +91,22 @@ section {
   margin-left: 43rem;
 }
 /* Buttons */
-.btn-nav:link,
-.btn-nav:visited {
+.btn-cta:link,
+.btn-cta:visited {
   padding: 1rem 1.5rem;
   background-color: white;
   border-radius: 30px;
   border: none;
 }
 
-.btn-nav:hover,
-.btn-nav:active {
+.btn-cta:hover,
+.btn-cta:active {
   background-color: hsla(194, 83%, 72%, 0.753);
   cursor: pointer;
   color: white;
 }
 .header {
-  background-image: url(/raaymii/sunnyside-agency/resources/css/img/image-header.jpg);
+  background-image: url(/desktop-view/resources/css/img/image-header.jpg);
   background-size: contain;
   background-position: center;
   height: 100vh;
