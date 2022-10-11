@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h2>Simple, traffic-based pricing</h2>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <div class="card">
+        <div class="section-1">
+          <p id="views">100K PAGEVIEWS</p>
+          <div class="amount">
+            <strong id="price">$16.00</strong>
+            <p>/ month</p>
+          </div>
+        </div>
+        <div class="slider">
+          <input
+            type="range"
+            step="10"
+            min="10"
+            max="1000"
+            value="100"
+            oninput="console.log(this.value)"
+            id="slider"
+          />
+        </div>
+        <div id="mobile-amount"></div>
+        <div class="lower-section">
+          <p>Monthly Billing</p>
+          <div class="">
+            <input type="checkbox" id="switch" class="checkbox" />
+            <label for="switch" class="toggle"></label>
+          </div>
+          <p>Yearly Billing</p>
+          <div id="colored">25% discount</div>
+        </div>
+        <div class="list">
+          <div>
+            <p>Unlimited websites</p>
+            <p>100% data ownership</p>
+            <p>Email reports</p>
+          </div>
+          <button>Start my trial</button>
+        </div>
+      </div>
+      <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div> -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
