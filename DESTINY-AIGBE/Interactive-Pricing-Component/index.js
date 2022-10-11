@@ -5,32 +5,24 @@ const checkbox = document.querySelector("input[type=checkbox]");
 checkbox.addEventListener("change", function () {
   checked = this.checked;
   change();
-  console.log(this.checked);
 });
 const change = () => {
   let value = slider.value * 1000;
   let views;
-  console.log(checked);
   let price;
-  console.log(value, slider.max);
   if (value === 1000000) {
-    console.log("okkk");
     views = 1000000;
     price = 36;
   } else if (value >= 500000) {
     price = 24;
     views = 500000;
-    console.log("okkk");
   } else if (value >= 100000) {
     price = 16;
-    console.log("okkk");
     views = 100000;
   } else if (value >= 50000) {
     price = 12;
-    console.log("okkk");
     views = 50000;
   } else if (value >= 10000) {
-    console.log("okkk");
     price = 8;
     views = 10000;
   } else {
@@ -41,7 +33,6 @@ const change = () => {
   document.getElementById("views").innerHTML = `${
     views < 1000000 ? views / 1000 : 1
   }${views < 1000000 ? "K" : "M"} PAGEVIEWS`;
-  console.log(views);
   document.getElementById(
     screen.width > 375 ? "price" : "mobile-price"
   ).innerHTML = `$${checked ? price / 4 : price}.00`;
