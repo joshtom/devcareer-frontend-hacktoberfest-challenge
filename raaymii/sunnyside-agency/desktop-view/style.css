@@ -106,7 +106,7 @@ section {
   color: white;
 }
 .header {
-  background-image: url(/desktop-view/resources/css/img/image-header.jpg);
+  background-image: url(/raaymii/sunnyside-agency/desktop-view/resources/css/img/image-header.jpg);
   background-size: contain;
   background-position: center;
   height: 100vh;
@@ -164,10 +164,7 @@ section {
 }
 .yellow {
   height: 31.27rem;
-  width: 40.3rem;
-  /* position: absolute;
-  display: flex;
-  justify-content: flex-end; */
+  width: 40.5rem;
   float: right;
 }
 
@@ -179,7 +176,7 @@ section {
 
 .pink {
   height: 31.27rem;
-  width: 40.5rem;
+  width: 40.9rem;
   display: flex;
   justify-content: flex-start;
   position: absolute;
@@ -213,7 +210,7 @@ section {
 
 .section-fruits img {
   height: 31.27rem;
-  width: 40.5rem;
+  width: 40.9rem;
   z-index: 1;
 }
 
