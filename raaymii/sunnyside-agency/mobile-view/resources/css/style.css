@@ -40,7 +40,7 @@
     overflow: hidden;
   }
   header {
-    background-image: url(/resources/css/img/image-header.jpg);
+    background-image: url(/raaymii/sunnyside-agency/mobile-view/resources/css/img/image-header.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -78,6 +78,7 @@
   .main-nav li a {
     text-decoration: none;
     font-size: 1.1rem;
+    color: black;
   }
 
   .nav-open .mobile-nav {
@@ -158,7 +159,7 @@
   }
 
   .section-graphic {
-    background-image: url(/resources/images/mobile/image-graphic-design.jpg);
+    background-image: url(/raaymii/sunnyside-agency/mobile-view/resources/images/mobile/image-graphic-design.jpg);
     height: 78vh;
     width: 100%;
     background-size: cover;
@@ -188,7 +189,7 @@
   }
 
   .section-photography {
-    background-image: url(/resources/images/mobile/image-photography.jpg);
+    background-image: url(/raaymii/sunnyside-agency/mobile-view/resources/images/mobile/image-photography.jpg);
     height: 78vh;
     width: 100%;
     background-size: cover;
