@@ -1,0 +1,98 @@
+@media (min-width: 350px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: hsl(30deg, 38%, 92%);
+    font-size: 62.5%;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    height: 100vh;
+    padding: 1.5rem;
+  }
+  .container {
+    background-color: white;
+    height: 93vh;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .container .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .card img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .container .card .card-details {
+    margin: 1.5rem;
+  }
+  .container .card .card-details h6 {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+  }
+  .container .card .card-details h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-family: "Fraunces", serif;
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+  .container .card .card-details p {
+    font-size: 1rem;
+    line-height: 1.8;
+    display: block;
+  }
+  .container .card .card-details .price {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .container .card .card-details .price h2 {
+    font-family: "Fraunces", serif;
+    color: hsl(158deg, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0.7rem 0;
+  }
+  .container .card .card-details .price p {
+    text-decoration: line-through;
+    display: inline-block;
+    margin: auto 0;
+  }
+  .container .card .card-details button {
+    background-color: hsl(158deg, 36%, 37%);
+    padding: 1rem 2.5rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    margin-top: 0.8rem;
+  }
+  .container .card .card-details button ion-icon {
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    right: 9px;
+    font-size: 1rem;
+    top: 0.1rem;
+    justify-content: flex-end;
+  }
+}/*# sourceMappingURL=main.css.map */
