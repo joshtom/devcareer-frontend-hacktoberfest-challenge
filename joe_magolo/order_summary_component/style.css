@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:hsl(225, 100%, 94%);
+    font-family: Red Hat Display;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.card_container{
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+
+}
+.card_pic{
+    display: block;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+}
+.title{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.details{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    word-spacing: 3px;
+
+}
+.payment{
+    display: flex;
+    align-items: center;
+    background-color:hsl(225, 100%, 98%);
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 0.8rem;
+}
+.plan{
+    margin-left: 15px;
+    margin-right: auto;
+}
+.plan_duration{
+    font-weight: 600;
+    color:hsl(223, 47%, 23%);
+    margin-bottom: -3px;
+    
+}
+.price{
+    margin-top: -3px;
+}
+button{
+    display: block;
+    width: 80%;
+    margin: 0px auto 10px; 
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 7px 10px 0 hsla(245, 75%, 52%, .25);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 1em;
+}
+.change{
+    padding-right: 5px;
+}
+.cancel{
+    color: hsl(245, 75%, 52%);
+    background-color: white;
+    box-shadow: none;
+}
+
+/* Desktop site */
+
+@media only screen and (min-width: 750px) {
+
+    .card_container{
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .attribution{
+        margin-top: auto;
+        position: relative;
+    }
+
+}
+
+/* active and hover */
+.change:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.change:active{
+    color:hsla(245, 75%, 52%, .25);
+}
+
+button:active{
+    cursor: pointer;
+    background-color: hsl(223, 47%, 23%);
+}
+.cancel:active{
+    background-color: white;
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
