@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 62.5%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  width: 35rem;
+  height: 25rem;
+  display: block;
+  text-align: left;
+  margin: 10% auto;
+  .card {
+    display: flex;
+    img {
+      height: 25rem;
+      width: 17.5rem;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .card-details {
+      padding: 1.9rem;
+      h6 {
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 0.7rem;
+        display: inline-block;
+        margin-bottom: 0.6rem;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        font-family: "Fraunces", serif;
+        display: block;
+        margin-bottom: 0.9rem;
+        line-height: 1;
+      }
+      p {
+        font-size: 0.8rem;
+        line-height: 1.8;
+      }
+      .price {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        & h2 {
+          font-family: "Fraunces", serif;
+          color: hsl(158, 36%, 37%);
+          font-size: 1.7rem;
+          font-weight: 700;
+          display: inline-block;
+          margin: 0.4rem 0;
+        }
+        & p {
+          text-decoration: line-through;
+          display: inline-block;
+          margin: auto 0;
+        }
+      }
+      button {
+        background-color: hsl(158, 36%, 37%);
+        padding: 1rem 2.5rem;
+        text-align: center;
+        color: white;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        margin-top: 0.8rem;
+        ion-icon {
+          font-weight: 200;
+          position: relative;
+          right: 2px;
+          font-size: 1rem;
+          top: 0.1rem;
+        }
+      }
+    }
+  }
+}
