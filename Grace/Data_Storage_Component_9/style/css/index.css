@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../../images/bg-desktop.png") hsl(229deg, 57%, 11%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875em;
+}
+
+.hero {
+  display: flex;
+  flex-flow: column nowrap;
+  background: hsl(228deg, 56%, 26%);
+  margin-top: -13em;
+  gap: 2em;
+  padding: 2em 7.5em 2em 2em;
+  border-top-right-radius: 90px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.hero .hero_options {
+  display: flex;
+  gap: 1em;
+}
+.hero .hero_options div {
+  display: flex;
+  background: hsl(229deg, 57%, 11%);
+  padding: 13px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+.hero .hero_options div img {
+  width: 100%;
+}
+
+.main {
+  background: hsl(228deg, 56%, 26%);
+  margin-bottom: 9.4em;
+  padding: 1.5em 2em 2em;
+  border-radius: 10px;
+  color: #c6c5c5;
+  position: relative;
+}
+.main h1 {
+  font-size: 0.875em;
+}
+.main div:first-child {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.8em;
+}
+.main_span {
+  font-weight: 700;
+  color: #fff;
+}
+.main_capacity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fill {
+  display: flex;
+  background: hsl(229deg, 57%, 11%);
+  height: 1em;
+  border-radius: 10px;
+}
+.fill :first-child {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  background: linear-gradient(to right, hsl(6deg, 100%, 80%), hsl(335deg, 100%, 65%));
+  border-radius: 10px;
+  animation: progress 4s 1 linear;
+}
+.fill :first-child :first-child {
+  background: #fff;
+  border-radius: 100%;
+  max-width: 0.7em;
+  max-height: 0.7em;
+  margin: 1.8px 2px 0 0;
+}
+
+.float {
+  background: #fff;
+  color: rgb(166, 166, 166);
+  padding: 0.5em;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -25px;
+  left: 60px;
+  font-weight: 700;
+}
+.float p {
+  display: flex;
+  gap: 0.4em;
+  place-items: center;
+}
+.float span {
+  font-size: 2em;
+  color: #000;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 643px) {
+  body {
+    background: url("../../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    margin: 0 1em;
+    flex-direction: column;
+  }
+  .hero {
+    margin-top: 0;
+    border-top-right-radius: 50px;
+    padding: 2em 5em 2em 2em;
+  }
+  .main {
+    margin-bottom: 0;
+    padding: 1.5em 2em 3em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    width: 35em;
+    padding-top: 2em;
+  }
+  .float {
+    position: absolute;
+    bottom: 105px;
+    left: 345px;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .float:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #fff #fff transparent transparent;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+  }
+}
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 45%;
+  }
+  75% {
+    width: 65%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

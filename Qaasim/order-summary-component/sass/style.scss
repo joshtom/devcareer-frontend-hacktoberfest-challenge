@@ -1,0 +1,114 @@
+@use "colors";
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: colors.$Paleblue;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.container {
+  min-width: 20rem;
+  border-radius: 0.9rem;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 0.9rem;
+  width: 20rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .3);
+}
+
+.inner-text {
+  h2 {
+    color: colors.$Darkblue;
+    font-weight: 900;
+  }
+  p {
+    width: 80%;
+    color: colors.$Desaturatedblue;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 auto 1.2rem;
+    line-height: 1.35rem;
+  }
+}
+
+.plan {
+  width: 85%;
+  padding: 0.18rem 0.65rem;
+  box-sizing: border-box;
+  background-color: colors.$Verypaleblue;
+  border-radius: 0.85rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 1.2rem;
+  .m-icon {
+    margin-top: 0.5rem;
+  }
+  .annual-text {
+    margin-left: 1rem;
+    color: colors.$Desaturatedblue;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  b {
+    color: colors.$Darkblue;
+    font-weight: 900;
+    margin-left: auto;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.payment {
+  height: 3rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  display: block;
+  margin: 0 auto 1.4rem;
+  background-color: colors.$Brightblue;
+  width: 85%;
+  font-weight: 700;
+  border: 0;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .2);
+
+  &:hover {
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%, 0.65);
+  }
+}
+.cancel-order {
+  display: block;
+  text-decoration: none;
+  color: colors.$Desaturatedblue;
+  padding: 0 0 1rem;
+  font-weight: 700;
+
+  &:hover {
+    color: colors.$Darkblue;
+  }
+}
+
+.image{
+border-radius: .8rem .8rem 0 0;
+width: 20rem;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width:480px){
+    body{
+    background-image: url(/images/pattern-background-mobile.svg);
+}
+}
