@@ -10,7 +10,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: colors.$Paleblue;
-  background-image: url(/images/pattern-background-desktop.svg);
+  background-image: url(./images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-size: auto auto;
 }
@@ -109,6 +109,6 @@ width: 20rem;
 
 @media (max-width:480px){
     body{
-    background-image: url(/images/pattern-background-mobile.svg);
+    background-image: url(./images/pattern-background-mobile.svg);
 }
 }
