@@ -14,27 +14,29 @@
 
   <div class="app-pattern">
     <section>
-      <h1>Simple, traffic-based pricing</h1>
-      <h3 id="pattern-p">Sign-up for our 30-day trial. No credit card required.</h3>
+      <h1 id="pattern-h1">Simple, traffic-based pricing</h1>
+      <h2 id="pattern-p">Sign-up for our 30-day trial. No credit card required.</h2>
     </section>
-    <img src="./images/pattern-circles.svg" alt="img/pattern-circles" id="img-pattern"/>
+    <img src="./images/pattern-circles.svg" alt="img/pattern-circles" id="img-pattern" style="z-index:-10;"/>
   </div>
 
 <main class="pricing-component">
   <section class="pricing-container">
     <hgroup>
-      <h4 class="page-views">100K</h4> &nbsp;
-      <h4 class="page-views"> PAGEVIEWS</h4>
+      <h3 class="page-views">100K</h3> <a>&nbsp;</a>
+      <h3 class="page-views"> PAGEVIEWS</h3>
       </hgroup> 
       <div class="slider-container">
+        <label for="slider">
         <input type="range" min="0" max="100" value="50"  id="slider"/>
+      </label>
         <div id="selector">
           <div class="select-btn"></div>
         </div>
           <div id="slider-bar"></div>
       </div>    
     <hgroup>
-      <h1 id="amount-checker">$16.00</h1> &nbsp <h4>/&nbsp;month</h4>
+      <h1 id="amount-checker">$16.00</h1><a>&nbsp;</a> <h3>/<a>&nbsp;</a>month</h3>
     </hgroup>
   </section>
 
@@ -55,9 +57,9 @@
 
   <section class="CTA-container">
     <ul>
-    <li><a class="CTA-checker"><img src="./images/icon-check.svg"/></a> Unlimited websites</li>
-    <li><a class="CTA-checker"> <img src="./images/icon-check.svg"/></a>  100% data ownership</li>
-    <li><a class="CTA-checker">  <img src="./images/icon-check.svg"/></a> Email reports</li>
+    <li><a class="CTA-checker"><img src="./images/icon-check.svg" alt="img/icon-check" /></a> Unlimited websites</li>
+    <li><a class="CTA-checker"> <img src="./images/icon-check.svg" alt="img/icon-check"/></a>  100% data ownership</li>
+    <li><a class="CTA-checker">  <img src="./images/icon-check.svg" alt="img/icon-check"/></a> Email reports</li>
   </ul>
     <input type="submit" value=" Start my trial"  id="CTA-btn"/>
   </section>

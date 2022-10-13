@@ -47,10 +47,13 @@
 }
 
 h1{
-    font-size: 32px;
+    font-size: 28px;
     font-weight:var(--font-weight-bg)
 }
 
+h3{
+    font-size: 14px;
+}
 
 
 p{
@@ -62,15 +65,15 @@ body{
 }
 
 main{
-    width: 500px;
-    height: 350px;
+    width: 520px;
+    height: 395px;
     margin: 0 auto;
     background-color:var(--White);
     color: var(--Grayish-Blue);
     box-shadow: 0px 15px 15px 4px rgba(0,0,0,0.05);
     border-radius: 10px;
     position: absolute;
-    top:12rem;   
+    top:14rem;   
     left:0;
     right: 0;
     z-index: 2;
@@ -87,20 +90,27 @@ main{
     height: 430px;
     text-align: center;
     position: relative;
-    z-index: 1;
     padding: 4rem;
+    z-index: -15;
+    
  
 }
 
 .app-pattern h1{
    color:var(--Dark-Desaturated-Blue);
+   margin-top: 1rem;
 }
 
 #pattern-p{
     font-size: var(--font-size-p);
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: var(--font-weight-md);
     color: var(--Grayish-Blue);
+    z-index: 3;
+}
+
+#pattern-h1{
+    z-index: 3;
 }
 .page-views{
     letter-spacing: 1px;
@@ -113,8 +123,8 @@ main{
     right: 0;
     left: 0;
     margin: 0 auto;
-    top: 2.5rem;
-    width: 120px;
+    top: 3rem;
+    width: 130px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -122,7 +132,7 @@ main{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 3rem 2rem ;
+    margin: 2.5rem 3rem 3.5rem 3rem ;
 }
 
 hgroup{
@@ -136,13 +146,18 @@ hgroup h1{
     color: var(--Dark-Desaturated-Blue);
 }
 
+#amount-checker{
+    font-size:34px;
+    font-weight: 900;
+}
+
 .billing-container{
         display: flex;
         align-items: center;
-        padding-left: 6.5rem;
+        padding-left: 6rem;
         padding-top: 1rem;
         border-bottom: 1px solid rgba(0,0,0,0.1);
-        line-height: 5rem;
+        line-height: 5.5rem;
 }
 
 .billing-container p{
@@ -167,7 +182,7 @@ hgroup h1{
     width: 80%;
     margin: 0 auto;
     position: absolute;
-    top: 5.5rem;
+    top: 7rem;
     left:0;
     right:0;
    
@@ -325,10 +340,58 @@ input:checked~.check-slider:before{
 
 main{
     width: 480px;
-    height: 360px;
+    height: 390px;
     margin: 0 auto;
     top:13rem;   
 }
+
+.switch-container{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    margin: 0 10px;
+}
+
+
+#switch{
+    display: none;
+}
+
+input:checked~.check-slider{
+    background-color: var(--Primary-Soft-Cyan);
+}
+
+input:checked~.check-slider:before{
+    transform: translateX(18px);
+}
+
+.check-slider{
+    position:absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    cursor: pointer;
+    background-color: var(--Light-Gray);
+    border-radius: 3rem;
+    transition: 0.5s;
+}
+
+.check-slider:before{
+      position: absolute;
+      content: ' ';
+      background-color: white;
+      left: 5px;
+      top: 3.5px;
+      height: 12px;
+      width: 12px;
+      border-radius: 40px;
+      transition: all ease 0.3s;
+
+}
+
+
 
 }
 
@@ -412,7 +475,7 @@ main{
 .billing-container{
     display: flex;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 2.8rem;
     border-bottom: 1px solid rgba(0,0,0,0.1);
     line-height: 6rem;
     padding-top: 0rem;
