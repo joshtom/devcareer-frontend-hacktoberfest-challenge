@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 2px -81px;
+}
+@media (max-width: 480px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-position: 1px 0px;
+  }
+}
+body main {
+  max-width: 450px;
+  margin: 12vh auto;
+}
+@media (max-width: 480px) {
+  body main {
+    max-width: 90%;
+    margin: 11vh auto;
+  }
+}
+body main .cur,
+body main button {
+  cursor: pointer;
+}
+body main .hero {
+  max-height: 31vh;
+}
+@media (max-width: 480px) {
+  body main .hero {
+    max-height: 29vh;
+  }
+}
+body main section {
+  background-color: white;
+  text-align: center;
+  padding: 36px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 4px 12px 1px;
+  border-radius: 0 0 15px 15px;
+}
+@media (max-width: 480px) {
+  body main section {
+    padding: 20px;
+  }
+}
+body main section h1 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  padding-top: 14px;
+}
+body main section button {
+  width: 100%;
+  padding: 12px;
+  color: hsl(225deg, 100%, 98%);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: hsl(245deg, 75%, 52%);
+  box-shadow: hsla(225deg, 100%, 98%, 0.9) -2px 8px 6px -1px, hsla(225deg, 100%, 98%, 0.9) -1px 12px 4px 0px;
+  border: none;
+  margin: 8px auto;
+  border-radius: 8px;
+}
+body main section .cancel {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px;
+  color: hsl(224deg, 23%, 55%);
+}
+body main section .plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+  margin: 12px 0;
+  padding: 12px 18px;
+  background-color: hsl(225deg, 100%, 98%);
+}
+body main section .plan .annual p {
+  padding-top: 2px;
+}
+body main section .plan h2 {
+  font-size: 16px;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 700;
+  padding-top: 2px;
+}
+body main section .plan img {
+  margin-right: 16px;
+}
+body main section .plan p {
+  padding: 0;
+}
+body main section .plan p.change {
+  font-weight: 700;
+  text-decoration: underline;
+  color: hsl(245deg, 75%, 52%);
+}
+body main section .plan .inner {
+  display: flex;
+}
+body main section p {
+  color: #91949e;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+}
+@media (max-width: 480px) {
+  body main section p {
+    padding: 14px;
+  }
+}
+body main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}/*# sourceMappingURL=style.css.map */

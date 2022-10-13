@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  @include mobile {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-position: 1px 0px;
+  }
+  background-repeat: no-repeat;
+  background-position: 2px -81px;
+  main {
+    max-width: 450px;
+    margin: 12vh auto;
+    @include mobile {
+      max-width: 90%;
+      margin: 11vh auto;
+    }
+    .cur,
+    button {
+      cursor: pointer;
+    }
+    .hero {
+      max-height: 31vh;
+      @include mobile {
+        max-height: 29vh;
+      }
+    }
+    section {
+      background-color: white;
+      text-align: center;
+      padding: 36px;
+      box-shadow: rgb(0 0 0 / 9%) 0px 4px 12px 1px;
+      @include mobile {
+        padding: 20px;
+      }
+      border-radius: 0 0 15px 15px;
+      h1 {
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+        padding-top: 14px;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        color: hsl(225, 100%, 98%);
+        font-weight: 700;
+        font-size: 16px;
+        background-color: hsl(245, 75%, 52%);
+        box-shadow: hsl(225deg 100% 98% / 90%) -2px 8px 6px -1px,
+          hsl(225deg 100% 98% / 90%) -1px 12px 4px 0px;
+        border: none;
+        margin: 8px auto;
+        border-radius: 8px;
+      }
+      .cancel {
+        font-weight: 700;
+        font-size: 16px;
+        padding: 8px;
+        color: hsl(224, 23%, 55%);
+      }
+      .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 16px;
+        margin: 12px 0;
+        padding: 12px 18px;
+        background-color: hsl(225, 100%, 98%);
+        .annual p {
+          padding-top: 2px;
+        }
+        h2 {
+          font-size: 16px;
+          color: hsl(223, 47%, 23%);
+          font-weight: 700;
+          padding-top: 2px;
+        }
+        img {
+          margin-right: 16px;
+        }
+        p {
+          padding: 0;
+          &.change {
+            font-weight: 700;
+            text-decoration: underline;
+            color: hsl(245, 75%, 52%);
+          }
+        }
+        .inner {
+          display: flex;
+        }
+      }
+      p {
+        color: #91949e;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 16px 24px;
+        @include mobile {
+          padding: 14px;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px 15px 0 0;
+    }
+  }
+}
