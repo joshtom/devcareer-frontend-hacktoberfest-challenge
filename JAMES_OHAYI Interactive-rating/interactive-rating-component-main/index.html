@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  
+  <!-- Rating state start -->
+
+  <section class="rating-container">
+    <div id="image-container">
+      <img src="./images/icon-star.svg" alt="icon-star" />
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <ul class="number-container ">
+      <li id="numb1"><button class="num">1</button></li>
+      <li id="numb2"><button class="num">2</button></li>
+      <li id="num3"><button  class="num">3</button></li>
+      <li id="numb4"><button class="num">4</button></li>
+      <li id="numb5"><button class="num">5</button></li>
+    </ul>
+    <label for="submit"></label>
+    <input type="submit" value="Submit"  id="rate-btn" />
+  </section>
+  
+
+  <!-- Rating state end -->
+
+
+  <!-- Thank you state start -->
+<section class="thanks-container hidden" >
+  
+  <div class="thanks-image">
+    <img src="./images/x-symbol-svgrepo-com.svg" alt="img/back" id="x-bar"/>
+  <img src="./images/illustration-thank-you.svg" alt="img/thank-you" />
+  </div>
+
+  <div  class="thanks-indicator">
+    <p id="thanks-indicator-p">You selected <span id="clicks-indicator">4</span> out of 5</p> 
+  </div>
+  <h1>Thank you!</h1>
+  <p id="thanks-p">
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+</section>
+  <!-- Thank you state end -->
+
+  <!-- <footer>
+  <div class="attribution" style="text-align:center;">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. &nbsp;
+    Coded by <a href="https://calculus001.netlify.app/" target="_blank">James Chukwuka Ohayi</a>.
+  </div>
+</footer> -->
+
+<script src="./app.js"></script>
+
+</body>
+</html>

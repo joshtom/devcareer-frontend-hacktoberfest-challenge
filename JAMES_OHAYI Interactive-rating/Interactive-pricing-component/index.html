@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  
+</head>
+<body>
+
+  <div class="app-pattern">
+    <section>
+      <h1 id="pattern-h1">Simple, traffic-based pricing</h1>
+      <h2 id="pattern-p">Sign-up for our 30-day trial. No credit card required.</h2>
+    </section>
+    <img src="./images/pattern-circles.svg" alt="img/pattern-circles" id="img-pattern" style="z-index:-10;"/>
+  </div>
+
+<main class="pricing-component">
+  <section class="pricing-container">
+    <hgroup>
+      <h3 class="page-views">100K</h3> <a>&nbsp;</a>
+      <h3 class="page-views"> PAGEVIEWS</h3>
+      </hgroup> 
+      <div class="slider-container">
+        <label for="slider">
+        <input type="range" min="0" max="100" value="50"  id="slider"/>
+      </label>
+        <div id="selector">
+          <div class="select-btn"></div>
+        </div>
+          <div id="slider-bar"></div>
+      </div>    
+    <hgroup>
+      <h1 id="amount-checker">$16.00</h1><a>&nbsp;</a> <h3>/<a>&nbsp;</a>month</h3>
+    </hgroup>
+  </section>
+
+
+
+  <section class="billing-container" >
+  <p> Monthly Billing </p>
+
+ <label class="switch-container"   >
+  <input type='checkbox' id="switch" class="checkbox" />
+  <span class="check-slider" id="check-slide"></span>
+</label>
+
+  <p> Yearly Billing </p>
+  <p id="billing-discount">  25% discount</p>
+  </section>
+
+
+  <section class="CTA-container">
+    <ul>
+    <li><a class="CTA-checker"><img src="./images/icon-check.svg" alt="img/icon-check" /></a> Unlimited websites</li>
+    <li><a class="CTA-checker"> <img src="./images/icon-check.svg" alt="img/icon-check"/></a>  100% data ownership</li>
+    <li><a class="CTA-checker">  <img src="./images/icon-check.svg" alt="img/icon-check"/></a> Email reports</li>
+  </ul>
+    <input type="submit" value=" Start my trial"  id="CTA-btn"/>
+  </section>
+
+</main>
+ 
+  <script src="./index.js"></script>
+  <script src="./toggle.js"></script>
+  <script src="./discountChange.js"></script>
+</body>
+</html>
+
+ <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+
+    <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  </div> -->
+  

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+}
+
+.container {
+  min-width: 20rem;
+  border-radius: 0.9rem;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 0.9rem;
+  width: 20rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+.inner-text h2 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+.inner-text p {
+  width: 80%;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 auto 1.2rem;
+  line-height: 1.35rem;
+}
+
+.plan {
+  width: 85%;
+  padding: 0.18rem 0.65rem;
+  box-sizing: border-box;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 0.85rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 1.2rem;
+}
+.plan .m-icon {
+  margin-top: 0.5rem;
+}
+.plan .annual-text {
+  margin-left: 1rem;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+.plan b {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  margin-left: auto;
+}
+.plan a:hover {
+  text-decoration: none;
+}
+
+.payment {
+  height: 3rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  display: block;
+  margin: 0 auto 1.4rem;
+  background-color: hsl(245deg, 75%, 52%);
+  width: 85%;
+  font-weight: 700;
+  border: 0;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+.payment:hover {
+  cursor: pointer;
+  background-color: hsla(245deg, 75%, 52%, 0.65);
+}
+
+.cancel-order {
+  display: block;
+  text-decoration: none;
+  color: hsl(224deg, 23%, 55%);
+  padding: 0 0 1rem;
+  font-weight: 700;
+}
+.cancel-order:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+.image {
+  border-radius: 0.8rem 0.8rem 0 0;
+  width: 20rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+}/*# sourceMappingURL=style.css.map */
