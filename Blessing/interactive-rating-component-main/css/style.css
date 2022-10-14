@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body, html {
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  color: white;
+  line-height: 1.5rem;
+}
+
+div {
+  margin-top: 25px;
+}
+
+.container {
+  width: 100vw;
+  min-height: 90vh;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .card {
+  background-color: hsl(213deg, 19%, 18%);
+  max-width: 400px;
+  height: fit-content;
+  border-radius: 1.5rem;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+.container .card h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.container .card p {
+  color: hsl(217deg, 12%, 63%);
+}
+.container .star-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: hsla(216deg, 12%, 54%, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.container .thanks-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .thanks > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .thanks .selected {
+  background-color: hsla(216deg, 12%, 54%, 0.2);
+  border-radius: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: hsl(25deg, 97%, 53%);
+  opacity: 0.8;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+}
+.star-rating label {
+  border-radius: 2rem;
+  padding: 5px;
+  background-color: hsla(216deg, 12%, 54%, 0.2);
+  color: hsl(217deg, 12%, 63%);
+  cursor: pointer;
+  width: 3.4rem;
+  height: 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star-rating label:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+.star-rating input {
+  display: none;
+}
+.star-rating input:checked + label {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+}
+
+button {
+  background: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  width: 100%;
+  border-radius: 2rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+}
+button:active {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.thanks {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
