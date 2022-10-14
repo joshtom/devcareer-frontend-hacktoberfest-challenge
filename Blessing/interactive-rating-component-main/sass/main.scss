@@ -1,0 +1,136 @@
+$orange: hsl(25, 97%, 53%);
+$very-dark-blue: hsla(216, 12%, 8%);
+$dark-blue: hsla(213, 19%, 18%);
+$medium-grey: hsla(216, 12%, 54%, 0.2);
+$light-grey: hsl(217, 12%, 63%);
+$white: hsl(0, 0%, 100%);
+
+@import "universal";
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin-top: 25px;
+}
+.container {
+    width: 100vw;
+    min-height: 90vh;
+    border: 1px solid red;
+    @include display();
+    flex-direction: column;
+    
+    .card {
+        background-color: $dark-blue;
+        max-width: 400px;
+        height: fit-content;
+        border-radius: 1.5rem;
+        padding: 30px;
+        margin-bottom: 25px;
+
+        h1 {
+            color: $white;
+        }
+        p {
+            color: $light-grey;
+        }
+    }
+
+    .star-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $medium-grey;
+        @include display();
+        margin-top: 0;
+    }
+
+    .thanks-img {
+        @include display();
+    }
+
+    .thanks > div {
+        @include display();
+        text-align: center;
+    }
+
+    .thanks {
+
+        .selected {
+            background-color: $medium-grey;
+            border-radius: 2rem;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            color: $orange;
+            opacity: 0.8;
+        }
+    }
+    
+}
+
+.star-rating {
+    // border:solid 1px #ccc;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    margin-top: 30px;
+
+   label {
+    border-radius: 2rem;
+    padding: 5px;
+    background-color: $medium-grey;
+    color: $light-grey;
+    cursor:pointer;
+    // margin: 10px;
+    width: 3.4rem;
+    height: 3.4rem;
+    @include display();
+
+    &:hover {
+        background-color: $light-grey;
+        color: $white;
+    }
+
+   }
+
+   input {
+    display: none;
+   }
+
+   input:checked + label{
+    color: $white;
+    background-color: $orange;
+   }
+}
+
+button {
+    background: $orange;
+    color: $white;
+    font-weight: 700;
+    width: 100%;
+    border-radius: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 17px;
+
+    &:hover {
+        background-color: $white;
+        color: $orange;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: $orange;
+        color: $white;
+    }
+}
+
+.thanks {
+    display: none;
+}
