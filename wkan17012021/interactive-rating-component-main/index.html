@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+
+  <div class="card-wrapper max-w-sm mx-auto mt-32 px-4">
+    <div class="inner-wrapper mx-auto py-12 px-4 ">
+      <img src="./images/icon-star.svg" alt="star icon" class="py-3 px-3 mb-6 rounded-full"/>
+      <h2 class="text-3xl text-left">
+        <span class="">How did we do?</span>
+      </h2>
+      <p class="mt-4 text-lg leading-6 text-indigo-200 text-left"> Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+        <div class="rating-wrapper mt-6">
+          <ol class="rating-list flex justify-between w-100">
+            <li class="rating one px-5 py-3 rounded-full hover:bg-slate-400 hover:text-white cursor-pointer ">1</li>
+            <li class="rating two px-5 py-3 rounded-full hover:bg-slate-400  hover:text-white cursor-pointer ">2</li>
+            <li class="rating three px-5 py-3 rounded-full hover:bg-slate-400  hover:text-white cursor-pointer ">3</li>
+            <li class="rating four px-5 py-3 rounded-full hover:bg-slate-400  hover:text-white cursor-pointer ">4</li>
+            <li class="rating five px-5 py-3 rounded-full hover:bg-slate-400  hover:text-white cursor-pointer ">5</li>
+          </ol>
+        </div>
+        <a class="submit-btn mt-8 w-full inline-flex items-center justify-center px-5 py-3 font-medium rounded-full uppercase hover:bg-white hover:text-orange-500 cursor-pointer"> Submit </a>
+    </div>
+    <div class="submitted-card-wrapper px-6 my-6">
+      <img class="mt-3 mb-4 mx-auto py-6" src="./images/illustration-thank-you.svg" alt="illustration icon"/>
+      <span class="block text-md text-center py-2 px-1 mt-4 mx-auto rounded-full">You selected <span class="choice"></span> out of 5</span>
+      <h2 class="text-3xl text-center mt-8">Thank you!</h2>
+      <p class="text-center mt-6 mb-8 pb-6"> We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+  <div id="test"></div>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
