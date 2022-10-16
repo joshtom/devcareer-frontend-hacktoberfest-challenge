@@ -1,0 +1,110 @@
+:root {
+  --dkcyan: hsl(185, 75%, 39%);
+  --vydkdesatblue: hsl(229, 23%, 23%);
+  --dkgrayblue: hsl(227, 10%, 46%);
+  --dkgray: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  color: var(--vydkdesatblue);
+}
+
+section {
+  background: var(--dkcyan);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.card {
+  min-width: 90vw;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center; /* as the template design has all text centred, we can apply the same styling to the general card*/
+  position: relative;
+}
+@media only screen and (min-width: 400px) {
+  .card {
+    min-width: 410px;
+  }
+}
+.card-header {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 10vh;
+}
+.card-body {
+  margin: auto;
+}
+.image-holder {
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  margin: -46px auto 1.5rem; /* to position photo overlain and in the middle, adjust margin top to -(1/2 * img pixel height); auto left/right, bottom 1.5rem to give some space between .image-holder and .name-age*/
+}
+.image-holder img {
+  width: 100%; /* gets the img to span the full width of the div img wrapper */
+  display: block;
+}
+.name-age {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+}
+.age {
+  color: var(--dkgray);
+  font-weight: 200;
+}
+.location {
+  display: block;
+  color: var(--dkgray);
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.card-footer {
+  margin-bottom: 2rem;
+}
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.stats li {
+  display: inline-block;
+}
+.stats p:first-child {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.stats p:last-child {
+  color: var(--dkgray);
+  font-weight: 100;
+  letter-spacing: 0.75px;
+}
+
+/* Circle graphics: estimate the positioning with trial and error. Note, add overflow: hidden to card component. Not sure how to keep this position if the screen width increases. Media queries? But would mean a lot of hacky adjustments.*/
+
+.circle-1,
+.circle-2 {
+  position: absolute;
+}
+.circle-1 {
+  top: -400px;
+  left: -700px;
+}
+.circle-2 {
+  bottom: -300px;
+  right: -750px;
+}

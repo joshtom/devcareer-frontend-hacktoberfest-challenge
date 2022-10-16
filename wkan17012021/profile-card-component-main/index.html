@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+
+  <body>
+    <section class="main">
+      <div class="circles">
+        <img
+          src="./images/bg-pattern-top.svg"
+          alt="circle pattern 1"
+          class="circle-1"
+        />
+        <img
+          src="./images/bg-pattern-bottom.svg"
+          alt="circle pattern 2"
+          class="circle-2"
+        />
+      </div>
+      <div class="card">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <!-- container for img so img doesn't need to be resized -->
+          <div class="image-holder">
+            <img src="./images/image-victor.jpg" alt="Victor's profile photo" />
+          </div>
+          <h1 class="name-age">
+            Victor Crest
+            <span class="age">26</span>
+            <span class="location">London</span>
+          </h1>
+        </div>
+        <div class="card-footer">
+          <ul class="stats">
+            <li class="followers">
+              <p>80K</p>
+              <p>Followers</p>
+            </li>
+            <li class="likes">
+              <p>803K</p>
+              <p>Likes</p>
+            </li>
+            <li class="photos">
+              <p>1.4K</p>
+              <p>Photos</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
