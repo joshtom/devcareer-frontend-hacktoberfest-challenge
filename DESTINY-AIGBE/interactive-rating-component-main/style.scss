@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+}
+
+#thank-you {
+  display: none;
+}
+
+main {
+  margin: 22vh auto;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+  max-width: 30%;
+  @media screen and (max-width: 480px) {
+    margin: 19vh auto;
+    max-width: 90%;
+  }
+  .star {
+    padding: 8px;
+    height: 39px;
+    margin-bottom: 32px;
+    width: 39px;
+    border-radius: 50%;
+    background-color: hsl(202, 14%, 26%);
+    padding-top: 11px;
+    padding-left: 11px;
+  }
+
+  h2 {
+    margin: 12px 0;
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+  }
+
+  .rating {
+    display: flex;
+    padding: 24px 0;
+    justify-content: space-between;
+    .num {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: hsl(207, 9%, 25%);
+      padding-top: 12px;
+      padding-left: 15px;
+      font-weight: 700;
+      color: hsl(216, 12%, 54%);
+      &:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+        cursor: pointer;
+      }
+      &.active {
+        background-color: hsl(217, 12%, 63%);
+        color: white;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 40px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    &:hover {
+      background-color: white;
+      color: hsl(25, 97%, 53%);
+      cursor: pointer;
+    }
+  }
+}
+
+#thank-you {
+  text-align: center;
+  p.select {
+    background-color: hsl(202, 14%, 26%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 40px;
+    padding: 5px 10px;
+    max-width: 55%;
+    margin: 28px auto;
+    @media screen and (max-width: 480px) {
+      max-width: 60%;
+    }
+  }
+  .text {
+    margin: 10px auto;
+    line-height: 1.5;
+    padding: 2px;
+  }
+}
