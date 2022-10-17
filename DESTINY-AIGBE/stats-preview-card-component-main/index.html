@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="body">
+      <main>
+        <img id="img-mobile" src="./images/image-header-mobile.jpg" alt="img" />
+        <div class="main">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="review">
+            <div class="part">
+              <b> 10k+ </b>
+              <div>companies</div>
+            </div>
+            <div class="part">
+              <b> 314 </b>
+              <div>templates</div>
+            </div>
+            <div class="part">
+              <b> 12M+ </b>
+              <div>queries</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img id="img" src="./images/image-header-desktop.jpg" alt="img" />
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    if (window.innerWidth < 376) {
+      document.getElementById("img-mobile").style.display = "block";
+      document.getElementById("img").style.display = "none";
+    } else {
+      document.getElementById("img").style.display = "block";
+      document.getElementById("img-mobile").style.display = "none";
+    }
+  </script>
+</html>
