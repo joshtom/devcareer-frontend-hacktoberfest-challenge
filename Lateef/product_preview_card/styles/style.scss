@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+$body: hsl(30, 38%, 92%);
+$card-bg: hsl(0, 0%, 100%);
+$p: hsl(228, 12%, 48%);
+$btn-bg: hsl(158, 36%, 37%);
+$btn-bg-hover: hsl(212, 21%, 14%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $body;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    p {
+        color: $p;
+    }
+    h1 {
+        font-family: 'Fraunces', serif;
+    }
+}
+.container {
+    max-width: 50%;
+    margin: 5% auto;
+    .card {
+        border-radius: 12px;
+        background-color: $card-bg;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        .img {
+            background-image: url(../images/image-product-desktop.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 12px 0 0 12px;
+        }
+        .card-body {
+            display: grid;
+            row-gap: 22px;
+            margin: 34px 37px 26px 0;
+            .title {
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            .name {
+                font-size: 2.2rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                
+            }
+            .description {
+                
+                margin-right: 39px;
+            }
+            
+            .price {
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+                .after {
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                    font-size: 2.7em;
+                    color: $btn-bg;
+                }
+            }
+            .cta {
+                background-color: $btn-bg;
+                font-weight: 700;
+                color: $card-bg;
+                padding: 18px;
+                border: none;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+                transition: .3s ease;
+                &:hover {
+                    background-color: $btn-bg-hover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .container {
+        max-width: 65%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 65%;
+        .card {
+            grid-template-columns: 1fr;
+            .img {
+                background-image: url(../images/image-product-mobile.jpg);
+                height: 300px;
+                border-radius: 12px 12px 0 0;
+            }
+            .card-body {
+                margin: 20px;
+                .description {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
