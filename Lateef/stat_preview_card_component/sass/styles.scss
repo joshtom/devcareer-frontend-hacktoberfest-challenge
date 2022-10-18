@@ -1,0 +1,143 @@
+@import './mixins';
+@import './vars';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    @include flex-center();
+    background-color: $color-bg;
+    height: 100vh;
+    width: 100vw;
+    font-size: 15px;
+}
+
+.card{
+    @include flex-center();
+    flex-direction: column;
+    height: $card-height;
+    width: $card-width;
+    background-color: $color-card;
+    color: $color-text;
+    font-family: $font-primary;
+    border-radius: $border-radius;
+    position: relative;
+
+    &__overlay{
+        background-color: hsla(271, 100%, 50%, 0.493);
+        position: absolute;
+        top: 0;
+        @include border-top();
+        height: 238px;
+        width: 100%;
+    }
+    &__image{
+        @include border-top();
+        height: 240px;
+        width: 100%;
+    }
+
+    &__body{
+        height: 100%;
+        @include flex-center();
+        justify-content: flex-start;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5em 2em;
+    }
+
+    &__header{
+        font-size: 1.75rem;
+        span{
+            color: $color-accent;
+        }
+    }
+
+
+    &__desc{
+        line-height: 1.75rem;
+    }
+    &__stats{
+    
+        ul {
+            list-style-type: none;
+            @include flex-center();
+            flex-direction: column;
+            padding-top: 1.5rem;
+            gap: 2rem;
+            li {
+                
+                text-transform: uppercase;
+                .card__stats--name{
+                    margin-top: 0.25em;
+                    font-size: 0.7rem;
+                    font-family: $font-secondary;
+                    letter-spacing: 1.25px;
+                    color: $color-heading;
+                }
+                
+            }
+            
+        }
+    }
+
+    p {
+        color: $color-paragraph;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    $card-height: 445px;
+    $card-width: 1105px;
+
+    .card{
+        height: $card-height;
+        width: $card-width;
+
+        flex-direction: row-reverse;
+
+
+        &__overlay{
+            height: 100%;
+            width: $card-width/2;
+            right: 0;
+            @include border-right();
+        }
+        &__image{
+            height: 100%;
+            width:$card-width/2;
+            @include border-right();
+        }
+
+        &__body{
+            text-align: left;
+            justify-content: center;
+            padding: 4.375em;
+        }
+
+        &__header{
+            font-size: 2.25rem;
+        }
+
+        &__desc{
+            line-height: 1.5rem;
+            padding-right: 2rem;
+        }
+
+        &__stats{
+            width: 100%;
+            ul {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 4rem;
+                }
+        }
+
+    }
+
+    
+}
