@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #121417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375em; }
+
+main, article {
+  display: flex;
+  gap: 1.5em;
+  background: #252d37;
+  width: 30vw;
+  padding: 2em;
+  color: white;
+  border-radius: 25px; }
+  main h1, article h1 {
+    font-weight: 700; }
+  main .star, article .star {
+    background: rgba(149, 158, 172, 0.1);
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 0.7em 0.25em;
+    width: 2em; }
+    main .star img, article .star img {
+      width: 50%; }
+  main .info, article .info, article .msg {
+    color: #7c8798; }
+  main form, article form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em; }
+    main form .rating, article form .rating {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      font-weight: 700; }
+      main form .rating p, article form .rating p {
+        background: rgba(149, 158, 172, 0.1);
+        color: #7c8798;
+        padding: 0.8em 1.2em;
+        border-radius: 100%;
+        cursor: pointer; }
+        main form .rating p:hover, article form .rating p:hover {
+          background: #fb7413;
+          color: white; }
+      main form .rating .selected, article form .rating .selected {
+        background: #959eac;
+        color: white; }
+    main form button, article form button {
+      background: #fb7413;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      outline: none;
+      border: none;
+      border-radius: 20px; }
+      main form button:hover, article form button:hover {
+        background: white;
+        color: #fb7413; }
+      main form button a, article form button a {
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+        text-decoration: none;
+        color: white; }
+        main form button a:hover, article form button a:hover {
+          color: #fb7413; }
+  @media screen and (min-width: 596px) and (max-width: 996px) {
+    main, article {
+      width: 60vw; } }
+  @media screen and (max-width: 596px) {
+    main, article {
+      width: 80vw; } }
+
+article {
+  justify-content: center;
+  align-items: center; }
+  article .result_display {
+    background: rgba(149, 158, 172, 0.1);
+    color: #fb7413;
+    border-radius: 20px;
+    padding: 0.8em;
+    letter-spacing: 0.05em; }
+
+.show {
+  display: flex;
+  flex-direction: column; }
+
+.hide {
+  display: none; }
