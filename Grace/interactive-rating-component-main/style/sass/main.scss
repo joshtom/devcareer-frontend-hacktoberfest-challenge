@@ -38,15 +38,18 @@ body{
     font-size: $text-size;
 }
 
+
 main{
-    display: flex;
-    // flex-direction: column;
-    gap: 1.5em;
-    background: $Dark-Blue;
-    width: 30vw;
-    padding: 2em;
-    color: $White;
-    border-radius: 25px;
+    .card{
+        background: $Dark-Blue;
+        width: 30vw;
+        padding: 2em;
+        color: $White;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
     h1{
         font-weight: $font-weight-700;
     }
@@ -75,23 +78,26 @@ main{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1em;
             font-weight: $font-weight-700;
-            button{
+            gap: 1em;
+            &_label{
                 background: $Light-Grey-a;
                 color: $Medium-Grey;
                 padding: 0.8em 1.2em;
                 border-radius: 100%;
                 cursor: pointer;
-                border: none;
-                &:hover{
-                    background: $Orange;
+                &:hover {
                     color: $White;
+                    background-color: $Orange;
                 }
-                &:focus{
-                    background: $Light-Grey;
-                    color: $White;
-                }
+            }
+            input{
+                display: none;
+            }
+            input:checked + label{
+                
+                background-color: $Light-Grey;
+                color: $White;
             }
         }
         #submit{
@@ -102,20 +108,14 @@ main{
             outline: none;
             border: none;
             border-radius: 20px;
+            padding: 1em 0;
             &:hover{
                 background: $White;
                 color: $Orange;
             }
-            a{
-                display: flex;
-                justify-content: center;
-                padding: 1em 0;
-                text-decoration: none; 
-                color: $White;
-                &:hover{
-                    color: $Orange;
-                }
-            }
+        }
+        .warn{
+            text-align: center;
         }
     }
 
@@ -125,12 +125,7 @@ main{
     @include screen-size(phone-only){
         width: 80vw;
     }
-}
-
-article{
-    @extend main;
-    justify-content: center;
-    align-items: center;
+    
     .result_display{
         background: $Light-Grey-a;
         color: $Orange;
@@ -141,13 +136,21 @@ article{
     .msg{
         @extend .info;
     }
-}
+    
+    .thanks{
+        display: none;
+        &_content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1em;
+        }
+    }
 
-.show{
-    display: flex;
-    flex-direction: column;
-}
-
-.hide{
-    display: none;
+    .back{
+        width: 30px;
+        cursor: pointer;
+    }
 }

@@ -11,36 +11,54 @@
 </head>
 <body>
 
-  <main id="home" class="show">
-    <div class="star">
-      <img src="images/icon-star.svg" alt="star icon"></img>
+  <main>
+    <div class="card home">
+      <div class="star">
+        <img src="images/icon-star.svg" alt="star icon"></img>
+      </div>
+
+      <h1>How did we do?</h1>
+      <p class="info">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <form>
+        <div class="rating">
+          <input type="radio" id="one" name="rates" value="1" />
+          <label for="one" class="rating_label">1</label>
+          <input type="radio" id="two" name="rates" value="2" />
+          <label for="two" class="rating_label">2</label>
+          <input type="radio" id="three" name="rates" value="3" />
+          <label for="three" class="rating_label">3</label>
+          <input type="radio" id="four" name="rates" value="4" />
+          <label for="four" class="rating_label">4</label>
+          <input type="radio" id="five" name="rates" value="5" />
+          <label for="five" class="rating_label">5</label>
+        </div>
+        <button id="submit" type="button">
+          Submit
+        </button>
+
+        <span class="warn"></span>
+      </form>
     </div>
 
-    <h1>How did we do?</h1>
-    <p class="info">Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!</p>
-    <form>
-      <div class="rating">
-        <button class="value">1</button>
-        <button class="value">2</button>
-        <button class="value">3</button>
-        <button class="value">4</button>
-        <button class="value">5</button>
+    <div class="card thanks">
+      <div class="back">
+        <p>&larr;</p>
       </div>
-      <button id="submit" type="submit"><a href="#thanks">SUBMIT</a></button>
-    </form>
+      <div class="thanks_content">
+      <div>
+        <!-- <a href="#home" onclick="home()" >
+        </a> -->
+        <img src="images/illustration-thank-you.svg" alt="thank you"></img>
+      </div>
+      <p class="result_display">You selected <span id="result"></span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p class="msg">We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+      </div>
   </main>
 
 
-<article id="thanks" class="hide">
-  <div>
-    <a href="#home" onclick="home()" ><img src="images/illustration-thank-you.svg" alt="thank you"></img></a>
-  </div>
-  <p class="result_display">You selected <span id="result"></span> out of 5</p>
-  <h2>Thank you!</h2>
-  <p class="msg">We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!</p>
-</article>
 
 <script src="script/script.js"></script>
 </body>

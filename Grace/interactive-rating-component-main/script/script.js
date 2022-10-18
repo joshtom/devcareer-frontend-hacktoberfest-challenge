@@ -1,31 +1,33 @@
-const Result = document.getElementById('result');
+const result = document.querySelector('#result');
+const submit = document.querySelector('#submit');
+const thanks = document.querySelector('.thanks');
+const homePage = document.querySelector('.home');
+const warn = document.querySelector('.warn');
+const back = document.querySelector('.back');
+const Content = document.querySelectorAll('input[name="rates"]');
 
-const content = document.querySelectorAll('.value');
-content.forEach( content => {
-    content.addEventListener('click', function(){
-
-        Result.innerHTML = content.innerHTML;
+warn.style.display = 'none';
+submit.addEventListener('click', function(){
+    Content.forEach( content => {
+        if(content.checked){
+            const rate = content.value;
+            result.innerHTML = rate;
+            warn.style.display = 'none';
+        }            
     });
+    if(result.innerHTML){
+        thanks.style.display = 'block';
+        homePage.style.display = 'none';
+    }
+    else{
+        warn.style.display = 'block';
+        warn.innerHTML = 'Please pick a rating';
+    }
 });
 
-// switch pages
-const Submit = document.getElementById('submit');
-const Thanks = document.getElementById('thanks');
-const Home = document.getElementById('home');
-
-const thankYouPage = () => {
-    if (Submit.id == 'submit'){
-        Thanks.classList.add('show');
-        Thanks.classList.remove('hide');
-        Home.classList.remove('show');
-        Home.classList.add('hide');
+back.addEventListener('click', () => {
+    if(thanks.style.display == 'block'){
+        thanks.style.display = 'none';
+        homePage.style.display = 'flex';
     }
-}
-Submit.addEventListener('click', thankYouPage);
-
-const home = ()=>{
-    Thanks.classList.remove('show');
-    Thanks.classList.add('hide')
-    Home.classList.remove('hide');
-    Home.classList.add('show');
-}
+})
