@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+.bg-img img {
+  width: 22rem;
+  height: 35rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.bg-img .mobile {
+  display: none;
+}
+
+.text-container {
+  padding: 2.5rem;
+  width: 18rem;
+  height: 30rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.inner-text .perf {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+.inner-text h2 {
+  color: hsl(212deg, 21%, 14%);
+  font-size: 2.2rem;
+  font-family: "Fraunces", serif;
+}
+.inner-text span {
+  line-height: 1.5;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.price {
+  width: 80%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(158deg, 36%, 37%);
+}
+.price .discount {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+}
+.price .original {
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+.btn svg {
+  margin-right: 2px;
+}
+
+.btn:hover {
+  background-color: hsl(158deg, 36%, 16%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 0.5rem;
+  }
+  .bg-img img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 15rem;
+  }
+  .bg-img .mobile {
+    display: block;
+  }
+  .bg-img .desktop {
+    display: none;
+  }
+  .text-container {
+    height: 25rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+  }
+  .inner-text h2 {
+    font-size: 1.7rem;
+  }
+  .btn {
+    margin-top: -15px;
+  }
+}/*# sourceMappingURL=style.css.map */
