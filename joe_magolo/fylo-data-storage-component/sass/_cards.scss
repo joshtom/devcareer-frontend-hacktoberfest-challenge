@@ -1,0 +1,119 @@
+.container {
+    //border: 1px solid red; //temporary
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 1.6rem;
+}
+.card {
+    background-color: $dark-blue;
+    width: 86%;
+    border-radius: 1rem;
+}
+
+.card-logo {
+    padding: 4rem;
+    border-top-right-radius: 10rem;
+}
+
+.card-storage {
+    padding: 3rem 3rem 5rem 3rem;
+    position: relative;
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.icon {
+    background-color: $very-dark-blue;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description {
+    color: $pale-blue;
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+.progress{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.text {
+    color: $pale-blue;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.progress-bar {
+    width: 100%;
+    background-color: $very-dark-blue;
+    padding: 3px;
+    border-radius: 1rem;
+    margin: 1.8rem 0 1rem 0;
+}
+
+.progress-bar-color {
+    width: 75%;
+    background-image: linear-gradient(90deg, $start, $end);
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 1rem;
+}
+
+.ball {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: $pale-blue;
+    border-radius: 1rem;
+}
+.floating-msg{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+}
+
+.msg {
+    background-color: white;
+    padding: 1.2rem 2.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    position: relative;
+    left: -50%;
+
+    strong {
+        font-size: 4rem;
+        color: $very-dark-blue;
+    }
+
+    span {
+        color: $grayish-blue;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        margin-left: 0.8rem;
+        white-space: nowrap;
+    }
+}
+
+.triangle {
+    display: none;
+}
