@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #121417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375em; }
+
+main .card {
+  background: #252d37;
+  width: 30vw;
+  padding: 2em;
+  color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em; }
+
+main h1 {
+  font-weight: 700; }
+
+main .star {
+  background: rgba(149, 158, 172, 0.1);
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 0.7em 0.25em;
+  width: 2em; }
+  main .star img {
+    width: 50%; }
+
+main .info, main .msg {
+  color: #7c8798; }
+
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em; }
+  main form .rating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 700;
+    gap: 1em; }
+    main form .rating_label {
+      background: rgba(149, 158, 172, 0.1);
+      color: #7c8798;
+      padding: 0.8em 1.2em;
+      border-radius: 100%;
+      cursor: pointer; }
+      main form .rating_label:hover {
+        color: white;
+        background-color: #fb7413; }
+    main form .rating input {
+      display: none; }
+    main form .rating input:checked + label {
+      background-color: #959eac;
+      color: white; }
+  main form #submit {
+    background: #fb7413;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em 0; }
+    main form #submit:hover {
+      background: white;
+      color: #fb7413; }
+  main form .warn {
+    text-align: center;
+    font-size: 0.8em; }
+
+@media screen and (min-width: 596px) and (max-width: 996px) {
+  main {
+    width: 60vw; } }
+
+@media screen and (max-width: 596px) {
+  main {
+    width: 80vw; } }
+
+main .result_display {
+  background: rgba(149, 158, 172, 0.1);
+  color: #fb7413;
+  border-radius: 20px;
+  padding: 0.8em;
+  letter-spacing: 0.05em; }
+
+main .thanks {
+  display: none; }
+  main .thanks_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em; }
+
+main .back {
+  width: 30px;
+  cursor: pointer; }
