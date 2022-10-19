@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  main {
+    max-width: 70%;
+    margin: 21vh auto;
+    color: white;
+    display: flex;
+    @include mobile {
+      margin: 10vh auto;
+      max-width: 100%;
+      display: block;
+      padding: 26px;
+    }
+    .main {
+      background-color: hsl(244, 38%, 16%);
+      border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px;
+      padding: 50px 64px;
+      max-width: 55%;
+      min-height: 50px;
+      @include mobile {
+        border-radius: 0 0 10px 10px;
+        max-width: 100%;
+        display: block;
+        padding: 30px;
+        text-align: center;
+      }
+      .review {
+        display: flex;
+        max-width: 90%;
+        justify-content: space-between;
+        margin-top: 36px;
+        @include mobile {
+          display: block;
+          max-width: 100%;
+        }
+        .part {
+          @include mobile {
+            margin-top: 24px;
+          }
+          b {
+            font-size: 18px;
+            @include mobile {
+              font-size: 24px;
+            }
+          }
+          div {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: hsla(0, 0%, 100%, 0.6);
+            @include mobile {
+              padding-top: 8px;
+            }
+          }
+        }
+      }
+      p {
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-bottom: 24px;
+        font-size: 15px;
+        line-height: 1.7;
+        @include mobile {
+          padding-bottom: 0;
+        }
+      }
+      h1 {
+        padding-bottom: 28px;
+        span {
+          color: hsl(277, 64%, 61%);
+        }
+      }
+    }
+    img {
+      filter: invert(12%) sepia(6%) saturate(4728%) hue-rotate(223deg)
+        brightness(60%) contrast(93%);
+      border-radius: 0 5px 5px 0;
+      @include mobile {
+        border-radius: 10px 10px 0 0;
+      }
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+}

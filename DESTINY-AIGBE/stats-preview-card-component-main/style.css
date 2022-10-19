@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233deg, 47%, 7%);
+  font-family: "Inter", sans-serif;
+}
+body main {
+  max-width: 70%;
+  margin: 21vh auto;
+  color: white;
+  display: flex;
+}
+@media (max-width: 480px) {
+  body main {
+    margin: 10vh auto;
+    max-width: 100%;
+    display: block;
+    padding: 26px;
+  }
+}
+body main .main {
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  padding: 50px 64px;
+  max-width: 55%;
+  min-height: 50px;
+}
+@media (max-width: 480px) {
+  body main .main {
+    border-radius: 0 0 10px 10px;
+    max-width: 100%;
+    display: block;
+    padding: 30px;
+    text-align: center;
+  }
+}
+body main .main .review {
+  display: flex;
+  max-width: 90%;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+@media (max-width: 480px) {
+  body main .main .review {
+    display: block;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  body main .main .review .part {
+    margin-top: 24px;
+  }
+}
+body main .main .review .part b {
+  font-size: 18px;
+}
+@media (max-width: 480px) {
+  body main .main .review .part b {
+    font-size: 24px;
+  }
+}
+body main .main .review .part div {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+@media (max-width: 480px) {
+  body main .main .review .part div {
+    padding-top: 8px;
+  }
+}
+body main .main p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  padding-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+@media (max-width: 480px) {
+  body main .main p {
+    padding-bottom: 0;
+  }
+}
+body main .main h1 {
+  padding-bottom: 28px;
+}
+body main .main h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+body main img {
+  filter: invert(12%) sepia(6%) saturate(4728%) hue-rotate(223deg) brightness(60%) contrast(93%);
+  border-radius: 0 5px 5px 0;
+  height: 100%;
+  max-width: 100%;
+}
+@media (max-width: 480px) {
+  body main img {
+    border-radius: 10px 10px 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */
