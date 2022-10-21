@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30deg, 38%, 92%);
+}
+body main {
+  border-radius: 8px;
+  max-width: 42%;
+  background-color: hsl(0deg, 0%, 100%);
+  margin: 18vh auto;
+  display: flex;
+}
+@media (max-width: 480px) {
+  body main {
+    max-width: 90%;
+    display: block;
+    margin: 26px auto;
+  }
+}
+body main img {
+  margin-left: 1px;
+  border-radius: 8px 0 0 8px;
+}
+@media (max-width: 480px) {
+  body main img {
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+}
+body main section {
+  padding: 24px;
+}
+body main section h6 {
+  font-weight: 500;
+  letter-spacing: 4px;
+  color: hsl(228deg, 12%, 48%);
+}
+body main section h1 {
+  font-family: "Fraunces", serif;
+  font-size: 36px;
+  padding: 14px 0;
+  font-weight: 800;
+  line-height: 0.95;
+  color: hsl(212deg, 21%, 14%);
+}
+body main section p {
+  font-weight: 500;
+  font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 1.5;
+  margin: 12px 0;
+}
+@media (max-width: 480px) {
+  body main section p {
+    margin: 6px 0;
+  }
+}
+body main section .price {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+body main section .price div {
+  font-size: 40px;
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+}
+body main section .price p {
+  text-decoration: line-through;
+  padding-top: 12px;
+  margin-left: 12px;
+}
+body main section button {
+  padding: 12px;
+  background-color: hsl(158deg, 36%, 37%);
+  border: none;
+  font-weight: 700;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  opacity: 0.9;
+  border-radius: 6px;
+  justify-content: center;
+  margin-top: 12px;
+}
+body main section button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+body main section button img {
+  margin-right: 12px;
+}/*# sourceMappingURL=style.css.map */

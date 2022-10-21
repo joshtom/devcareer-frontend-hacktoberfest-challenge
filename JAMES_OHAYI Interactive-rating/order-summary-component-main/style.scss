@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './css/color';
+@import './css/reset';
+@import './css/typogragphy';
+
+
+body{
+    text-align: center;
+    background-color: $Pale-blue;
+}
+
+
+img{
+    width:100%;
+}
+
+.bg-image-container{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+
+.container{
+    width: 420px;
+    height: 650px;
+    border-radius: $font-size;
+    margin:3rem auto;
+    background-color:$White;
+    position: absolute;
+    top: 3rem;
+    left: 0rem;
+    right: 0rem;
+    box-shadow: 0px 25px 25px hsla(245, 75%, 52%,0.19);
+}
+
+.hero-container{
+    margin-bottom: $m-2;
+}
+.hero-container img{
+    width: 420px;
+    height: auto;
+    border-top-left-radius:16px;
+    border-top-right-radius: 16px;
+}
+
+.summary-container h1{
+   font-weight: $lg-weight;
+   margin-top: $m-1;
+   margin-bottom: $m-1;
+   color: $Dark-blue;
+}
+
+.summary-container p{
+    font-weight: $sm-weight;
+    font-size: $font-size;
+    color: $Desaturated-blue;
+    margin-bottom: $m-1;
+    padding: 0px $p-3;
+}
+
+.pricing-container{
+    background-color: $Very-pale-blue;
+    margin: $m-2 2.5rem $m-1;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.music-image-container img{
+    width: 40px;
+    height: 40px;
+}
+
+.pricing-sub{
+    display: flex;
+    flex-direction: row;
+    gap: $m-1;
+}
+
+.pricing-plan p:first-child{
+     font-weight: $md-weight;
+     color: $Dark-blue;
+}
+
+.pricing-plan p:last-child{
+     color:$Desaturated-blue;
+     font-weight:$sm-weight;
+}
+
+#pricing-change{
+    color:$Bright-blue;
+     font-weight:$md-weight;
+     text-decoration: underline;
+}
+
+#pricing-change:hover{
+     text-decoration: none;
+     color: $Bright-blue-hover;
+}
+
+.accepting-order-container{
+    display: flex;
+    flex-direction: column;
+    gap:$m-1;
+}
+
+#submit-btn{
+    width: 340px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: $Bright-blue;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: $md-weight;
+    color: $White;
+    box-shadow: 0px 15px 15px hsla(245, 75%, 52%,0.19);
+}
+
+#submit-btn:hover{
+    background-color:$Bright-blue-hover;
+}
+
+#cancel-btn{
+    font-weight: $md-weight;
+    color: $Desaturated-blue;
+    margin-top: 0.7rem;
+}
+
+#cancel-btn:hover{
+    font-weight: $lg-weight;
+    color: $Dark-blue;
+    margin-top: 0.5rem;
+}
+.attribution { 
+         text-align: center; 
+         margin-bottom: $m-1;
+         position:inherit;
+    }
+
+.attribution a { 
+    color: $attribution-color;
+}
+
+
+@media only screen and (min-width:1440px) {
+       
+}
+
+@media only screen and (max-width:445px) {
+
+    .hero-container img{
+        width: 380px;
+        height: auto;
+    }
+    
+    .container{
+        width: 380px;
+        height: 640px;
+    }
+    
+    #submit-btn{
+        width: 310px;
+        height: 50px;
+    }
+
+    .bg-image-container{
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    .pricing-container{
+        background-color: $Very-pale-blue;
+        margin: $m-2 2rem $m-1;
+        padding: 1.5rem;
+
+    }
+    
+   
+}
+
+
+@media only screen and (max-width:385px) {
+
+    .hero-container img{
+        width: 360px;
+        height: auto;
+    }
+    
+    .container{
+        width: 360px;
+        height: 640px;
+    }
+    
+    #submit-btn{
+        width: 300px;
+        height: 50px;
+    }
+
+    .bg-image-container{
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    
+   
+}
+
+
+
+
+@media only screen and (max-width:380px) {
+   
+    .hero-container img{
+        width: 350px;
+        height: auto;
+    }
+    
+    .container{
+        top:1.5rem;
+        margin:2.5rem auto;
+        width: 350px;
+        height: 595px;
+    }
+    
+    #submit-btn{
+        width: 290px;
+        height: 50px;
+    }
+
+    .bg-image-container{
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    .pricing-container{
+        background-color: $Very-pale-blue;
+        margin: $m-2 2rem $m-1;
+        padding: 1rem;
+    }
+    
+   
+}

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Montserrat", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card {
+  background-color: hsla(213deg, 19%, 18%, 0.6);
+  width: 88%;
+  max-width: 41rem;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+}
+.container .card .star {
+  background-color: hsla(216deg, 12%, 54%, 0.2);
+  width: 4rem;
+  height: 4rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card .star img {
+  width: 1.4rem;
+}
+.container .card .title {
+  font-size: 2.4rem;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 1.9rem;
+}
+.container .card .text {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 1.21rem;
+  line-height: 2.2rem;
+  margin-top: 1.2rem;
+  letter-spacing: 0.05rem;
+}
+.container .card .rating-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .card .rating-wrapper .rating-btn {
+  color: hsl(217deg, 12%, 63%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: hsla(216deg, 12%, 54%, 0.2);
+  width: 4.1rem;
+  height: 4.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 2.6rem;
+}
+.container .card .rating-wrapper .rating-btn div {
+  transform: translateY(20%);
+}
+.container .card .rating-wrapper .rating-btn:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+}
+.container .card .rating-wrapper .rating-btn:hover div {
+  color: hsl(0deg, 0%, 100%);
+}
+.container .card .rating-wrapper .active {
+  background-color: hsl(217deg, 12%, 63%);
+}
+.container .card .rating-wrapper .active div {
+  color: hsl(0deg, 0%, 100%);
+}
+.container .card .submit-btn {
+  background-color: hsl(25deg, 97%, 53%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding: 1.3rem;
+  border-radius: 4rem;
+}
+.container .card .submit-btn div {
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+.container .card .submit-btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.container .card .submit-btn:hover div {
+  color: hsl(25deg, 97%, 53%);
+  font-weight: 700;
+}
+.container .card .card-content-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .card .card-content-2 img {
+  width: 14.5rem;
+  margin-top: 1rem;
+}
+.container .card .card-content-2 .text {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.container .card .card-content-2 .result {
+  background-color: hsla(216deg, 12%, 54%, 0.2);
+  padding: 0.8rem 1.4rem;
+  border-radius: 2rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+.container .card .card-content-2 .result div {
+  color: hsl(25deg, 97%, 53%);
+  font-size: 1.4rem;
+}
+.container .card .hide {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card {
+    padding: 3rem;
+    border-radius: 3rem;
+  }
+  .container .card .star {
+    width: 0.5 0rem;
+    height: 5rem;
+  }
+  .container .card .star img {
+    width: 1.7rem;
+  }
+  .container .card .title {
+    margin-top: 3.4rem;
+    font-size: 2.77rem;
+  }
+  .container .card .text {
+    margin-top: 0.9rem;
+    line-height: 2.4rem;
+    font-size: 1.505rem;
+  }
+  .container .card .rating-wrapper .rating-btn {
+    width: 5.1rem;
+    height: 5.1rem;
+    font-size: 1.6rem;
+  }
+  .container .card .rating-wrapper .rating-btn div {
+    transform: translateY(0);
+  }
+  .container .card .submit-btn {
+    margin-top: 3.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

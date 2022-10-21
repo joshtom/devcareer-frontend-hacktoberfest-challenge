@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185deg, 75%, 39%);
+  max-width: 100%;
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+  background-image: url(/profile-card-component-main/images/bg-pattern-bottom.svg), url(/profile-card-component-main/images/bg-pattern-top.svg);
+  background-size: 62rem, 55rem;
+  background-origin: padding-box, content-box;
+  top: 20rem;
+  background-position: top 25rem right -11rem, bottom -3rem left -8rem;
+  background-repeat: no-repeat;
+}
+
+.card {
+  background-color: white;
+  width: 25rem;
+  height: 28rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 18vh;
+  border-radius: 17px;
+  box-shadow: 7px 7px 15px rgba(41, 41, 41, 0.396);
+}
+.card img {
+  width: 25rem;
+  height: 10rem;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+}
+.card .card-image {
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  border: 4px solid white;
+  position: absolute;
+  display: inline-block;
+  left: 8.5rem;
+  top: 6rem;
+}
+.card .card-details {
+  position: relative;
+  padding: 2rem;
+}
+.card .card-details h2 {
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  left: 7.2rem;
+  top: 5rem;
+}
+.card .card-details .age {
+  font-size: 1.5rem;
+  display: inline-block;
+  left: 16.5rem;
+  top: 5rem;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.486);
+}
+.card .card-details .location {
+  font-size: 1.2rem;
+  display: inline-block;
+  position: absolute;
+  left: 10rem;
+  top: 7rem;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.468);
+}
+.card .card-details hr {
+  width: 25rem;
+  z-index: 9999;
+  position: absolute;
+  left: 0rem;
+  color: transparent;
+  top: 10rem;
+  border-top: 1px solid rgb(190, 190, 190);
+}
+.card .card-details .followers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 10rem;
+}
+.card .card-details .followers h6 {
+  font-size: 1.2rem;
+}
+.card .card-details .following {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  top: 10.4rem;
+  left: -0.2rem;
+}
+.card .card-details .following p {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.515);
+  letter-spacing: 2px;
+}
+
+@media (min-width: 350px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: hsl(185deg, 75%, 39%);
+    max-width: 100%;
+    font-size: 62.5%;
+    font-family: "Kumbh Sans", sans-serif;
+    overflow: hidden;
+    background-image: url(/profile-card-component-main/images/bg-pattern-bottom.svg), url(/profile-card-component-main/images/bg-pattern-top.svg);
+    background-size: 42rem, 55rem;
+    background-origin: padding-box, content-box;
+    top: 20rem;
+    background-position: top 28rem right -30rem, bottom -3rem left -40rem;
+    background-repeat: no-repeat;
+  }
+  .card {
+    background-color: white;
+    width: 21rem;
+    height: 25rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 22vh;
+    border-radius: 17px;
+    box-shadow: 7px 7px 15px rgba(41, 41, 41, 0.396);
+  }
+  .card img {
+    width: 21rem;
+    height: 10rem;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+  }
+  .card .card-image {
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    border: 4px solid white;
+    position: absolute;
+    display: inline-block;
+    left: 8rem;
+    top: 7.3rem;
+  }
+  .card .card-details {
+    position: relative;
+    padding: 1rem;
+  }
+  .card .card-details h2 {
+    font-size: 1.3rem;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 6.2rem;
+    top: 4rem;
+  }
+  .card .card-details .age {
+    font-size: 1.3rem;
+    display: inline-block;
+    left: 14.2rem;
+    top: 4rem;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.486);
+  }
+  .card .card-details .location {
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    left: 8.5rem;
+    top: 6rem;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.468);
+  }
+  .card .card-details hr {
+    width: 21rem;
+    z-index: 9999;
+    position: absolute;
+    left: 0rem;
+    color: transparent;
+    top: 8.5rem;
+    border-top: 1px solid rgb(190, 190, 190);
+  }
+  .card .card-details .followers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 9rem;
+  }
+  .card .card-details .followers h6 {
+    font-size: 1.2rem;
+  }
+  .card .card-details .following {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    top: 9.4rem;
+    left: -0.2rem;
+  }
+  .card .card-details .following p {
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.515);
+    letter-spacing: 2px;
+  }
+}/*# sourceMappingURL=main.css.map */

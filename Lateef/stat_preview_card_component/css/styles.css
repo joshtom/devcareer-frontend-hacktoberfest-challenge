@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(233deg, 47%, 7%);
+  height: 100vh;
+  width: 100vw;
+  font-size: 15px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 785px;
+  width: 325px;
+  background-color: hsl(244deg, 38%, 16%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.card__overlay {
+  background-color: hsla(271deg, 100%, 50%, 0.493);
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 238px;
+  width: 100%;
+}
+.card__image {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 240px;
+  width: 100%;
+}
+.card__body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+  padding: 2.5em 2em;
+}
+.card__header {
+  font-size: 1.75rem;
+}
+.card__header span {
+  color: hsl(277deg, 64%, 61%);
+}
+.card__desc {
+  line-height: 1.75rem;
+}
+.card__stats ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  gap: 2rem;
+}
+.card__stats ul li {
+  text-transform: uppercase;
+}
+.card__stats ul li .card__stats--name {
+  margin-top: 0.25em;
+  font-size: 0.7rem;
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: 1.25px;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+.card p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+@media screen and (min-width: 750px) {
+  .card {
+    height: 445px;
+    width: 1105px;
+    flex-direction: row-reverse;
+  }
+  .card__overlay {
+    height: 100%;
+    width: 552.5px;
+    right: 0;
+    border-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .card__image {
+    height: 100%;
+    width: 552.5px;
+    border-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .card__body {
+    text-align: left;
+    justify-content: center;
+    padding: 4.375em;
+  }
+  .card__header {
+    font-size: 2.25rem;
+  }
+  .card__desc {
+    line-height: 1.5rem;
+    padding-right: 2rem;
+  }
+  .card__stats {
+    width: 100%;
+  }
+  .card__stats ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 4rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive pricing component solution
+# Frontend Mentor - Profile card component solution
 
-This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -18,11 +18,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### The challenge
 
-Users should be able to:
-
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Use the slider and toggle to see prices for different page view numbers
+- Build out the project to the designs provided
 
 ### Screenshot
 
@@ -35,21 +31,21 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
-I learnt a lot of new things, I can't even start listing them out. Background image, more flexbox, gradient, a whole lot of stuff
+I learnt a lot of new things including sass
 
 ### Continued development
 
-Box shadow and linear gradient
+More SASS
 
 ### Useful resources
 
 - [w3Schools](https://www.w3schools.com) - This helped me a lot. I took some help from here
-- [CSS Tricks](https://www.csstricks.com) - I went here to learn box shadow and gradient
 
 ## Author
 

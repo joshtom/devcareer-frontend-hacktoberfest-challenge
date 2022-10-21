@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Stats preview card component</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <div class="card__overlay"></div>
+        <img
+          src="./images/image-header-mobile.jpg"
+          alt="Image Header"
+          class="card__image"
+        />
+
+        <div class="card__body">
+          <h2 class="card__header">
+            Get <span>insights</span> that help your business grow.
+          </h2>
+
+          <p class="card__desc">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <section class="card__stats">
+            <ul>
+              <li>
+                <h2 class="card__stats--number">10k+</h2>
+                <p class="card__stats--name">Companies</p>
+              </li>
+
+              <li>
+                <h2 class="card__stats--number">314</h2>
+                <p class="card__stats--name">Templates</p>
+              </li>
+
+              <li>
+                <h2 class="card__stats--number">12M+</h2>
+                <p class="card__stats--name">Queries</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

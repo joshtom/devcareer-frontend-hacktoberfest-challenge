@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive pricing component solution
+# Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -20,9 +20,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Use the slider and toggle to see prices for different page view numbers
+- View the optimal layout depending on their device's screen size
 
 ### Screenshot
 
@@ -34,13 +32,14 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- SASS
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
-I learnt a lot of new things, I can't even start listing them out. Background image, more flexbox, gradient, a whole lot of stuff
+I learnt a lot of new things including sass superpowers
 
 ### Continued development
 
@@ -49,7 +48,6 @@ Box shadow and linear gradient
 ### Useful resources
 
 - [w3Schools](https://www.w3schools.com) - This helped me a lot. I took some help from here
-- [CSS Tricks](https://www.csstricks.com) - I went here to learn box shadow and gradient
 
 ## Author
 

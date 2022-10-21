@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body, html {
+  font-size: 18px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(185deg, 75%, 39%);
+  line-height: 1.5rem;
+}
+
+main {
+  width: 100vw;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .card {
+  background-color: white;
+  border-radius: 1.5rem;
+  max-width: 400px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main .card .top-card-img > img {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+main .card .img-victor {
+  margin-top: -50px;
+}
+main .card .img-victor > img {
+  border-radius: 50%;
+  border: solid 5px white;
+}
+main .card hr {
+  width: 100%;
+  margin-top: 20px;
+}
+main .card .detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .card .detail > div {
+  margin: 20px;
+}
+main .card .detail > div > p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+main .card .age, main .card p {
+  font-weight: lighter;
+  opacity: 60%;
+}
+main .card .age {
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
