@@ -1,0 +1,28 @@
+$Dark_gray: hsl(0, 0%, 59%);
+
+@import "universal";
+
+@mixin display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100vw;
+    min-height: 95vh;
+    @include display();
+    flex-direction: column;
+
+
+    .card {
+        max-width: 90%;
+    
+        div>img {
+            max-width: 100%;
+        }
+    }
+
+}
+
+
