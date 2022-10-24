@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body, html {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    // background-color: blue;
-    // color: white;
-    line-height: 1.5rem;
+    height: 90vh;
+    background-color: $Cream;
+    line-height: 1.8em;
 }

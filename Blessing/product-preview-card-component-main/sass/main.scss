@@ -1,4 +1,8 @@
-$Dark_gray: hsl(0, 0%, 59%);
+$Dark-cyan: hsl(158, 36%, 37%);
+$Cream: hsl(30, 38%, 92%);
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
 
 @import "universal";
 
@@ -7,22 +11,194 @@ $Dark_gray: hsl(0, 0%, 59%);
     justify-content: center;
     align-items: center;
 }
+@mixin margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 main {
-    width: 100vw;
-    min-height: 95vh;
+    max-width: 100%;
+    // height: auto;
     @include display();
     flex-direction: column;
+    padding: 15px 0 15px 0;
 
+    div, h1, p {
+        padding: 0 0 15px 0;
+    }
+
+    p {
+        color: $Dark-grayish-blue;
+    }
 
     .card {
+        background-color: $White;
         max-width: 90%;
+        // max-height: fit-content;
+        border-radius: 10px;
+
+        div>#product-img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .body {
+            padding: 0 20px;
+
+            #name {
+                color: $Very-dark-blue;
+            }
+
+            #price {
+                display: flex;
+                align-items: center;
+                color: $Dark-cyan;
+
+                #st {
+                    font-size: 14px;
+                    font-weight: lighter;
+                    text-decoration-line: line-through;
+                    margin-left: 20px;
+                    color: $Dark-grayish-blue;
+                }
+            }
+
+            #perfume {
+                letter-spacing: 0.4rem;
+            }
+
+            h1 {
+                font-family: 'Fraunces', serif;
+            }
+
+            #cart-icon {
+                margin-right: 10px;
+            }
+              
+            .addtocart{
+                padding: 24px 0 24px 0;
+                border-radius: 10px;
+                border: none;
+                @include display();
+                background: $Dark-cyan;
+                cursor: pointer;
+                height: 2em;
+                width: 100%;
+                transition: transform 0.1s;
+            }
+            
+            .addtocart:hover{
+                transform: scale(1.04);
+            }
+            
+            .pretext {
+                color: $White;
+            }
+        }
+    }
+
+    .card-2 {
+        background-color: $White;
+        max-width: 45vw;
+        height: 100%;
+        border-radius: 10px;
+        display: none;
     
-        div>img {
-            max-width: 100%;
+
+        div>#product-img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            // padding-right: 10px;
+        }
+
+        .body {
+            margin: 0 20px;
+            padding-top: 30px;
+            margin-bottom: 25px;
+            
+
+            div, p, h1 {
+                // padding: 0 0 15px 0;
+            }
+
+            #name {
+                color: $Very-dark-blue;
+                font-size: 35px;
+                line-height: 0.9;
+            }
+
+            #price {
+                display: flex;
+                align-items: center;
+                color: $Dark-cyan;
+                margin: 10px 0 10px 0;
+
+                #st {
+                    font-size: 14px;
+                    font-weight: lighter;
+                    text-decoration-line: line-through;
+                    margin-left: 20px;
+                    color: $Dark-grayish-blue;
+                }
+            }
+
+            #perfume {
+                letter-spacing: 0.25rem;
+            }
+
+            h1 {
+                font-family: 'Fraunces', serif;
+            }
+
+            #cart-icon {
+                margin-right: 10px;
+            }
+              
+            .addtocart{
+                padding: 24px 0 24px 0;
+                border-radius: 10px;
+                border: none;
+                @include display();
+                background: $Dark-cyan;
+                cursor: pointer;
+                height: 2em;
+                width: 100%;
+                transition: transform 0.1s;
+            }
+            
+            .addtocart:hover{
+                transform: scale(1.04);
+            }
+            
+            .pretext {
+                color: $White;
+            }
         }
     }
 
 }
 
+@media only screen and (min-width: 768px) {
+    main {
+
+        .card {
+            display: none;
+        }
+
+        .card-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        div {
+            padding: 0;
+        }
+    }
+    
+}
+
+   
 
