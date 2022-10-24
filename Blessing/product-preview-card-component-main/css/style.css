@@ -21,7 +21,6 @@ body, html {
 
 main {
   max-width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,6 +156,9 @@ main .card-2 .body .pretext {
 }
 
 @media only screen and (min-width: 768px) {
+  main {
+    min-height: 100vh;
+  }
   main .card {
     display: none;
   }

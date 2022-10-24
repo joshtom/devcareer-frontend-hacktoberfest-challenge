@@ -18,7 +18,7 @@ $White: hsl(0, 0%, 100%);
 
 main {
     max-width: 100%;
-    min-height: 100vh;
+    // height: 100vh;
     @include display();
     flex-direction: column;
     padding: 15px 0 15px 0;
@@ -179,7 +179,7 @@ main {
 
 @media only screen and (min-width: 768px) {
     main {
-
+        min-height: 100vh;
         .card {
             display: none;
         }
