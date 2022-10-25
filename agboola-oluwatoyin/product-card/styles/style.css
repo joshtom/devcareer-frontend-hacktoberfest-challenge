@@ -1,0 +1,272 @@
+/*//## Colors
+
+//### Primary
+
+$dark-cyan: hsl(158, 36%, 37%);
+$dark-cyan-hover: hsl(158, 36%, 20%);
+$cream: hsl(30, 38%, 92%);
+
+//### Neutral
+
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%); 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+/*@use './variables' as v;
+
+* {margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: v.$cream;
+}
+*/
+.container {
+  padding: 1.6rem;
+  padding-top: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  max-width: 45rem;
+}
+.container .card .hero {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.container .card .desktop {
+  display: none;
+}
+.container .card .card-wrapper {
+  padding: 2.5rem;
+  padding-top: 2rem;
+}
+.container .card .card-wrapper h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.46rem;
+  color: hsl(228deg, 12%, 48%);
+}
+.container .card .card-wrapper h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.95rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.7rem;
+  line-height: 3.1rem;
+  color: hsl(212deg, 21%, 14%);
+}
+.container .card .card-wrapper .description {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 1.29rem;
+  line-height: 2.26rem;
+}
+.container .card .card-wrapper .price-wrapper {
+  margin-top: 4.45rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.container .card .card-wrapper .price-wrapper .price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.05rem;
+  color: hsl(158deg, 36%, 37%);
+}
+.container .card .card-wrapper .price-wrapper .old-price {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 2.4rem;
+  font-size: 1.3rem;
+}
+.container .card .card-wrapper .btn {
+  background-color: hsl(158deg, 36%, 37%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.container .card .card-wrapper .btn:hover {
+  background-color: hsl(158deg, 36%, 20%);
+}
+
+/*@use './variables' as v;
+
+.container{
+   // border: 1px solid magenta; temporary//
+    padding: 2.6rem;
+    padding-top:5px;
+.card{
+    background-color: v.$white;
+    border-radius: 1rem;
+    .hero{
+        width:100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    .card-wrapper{
+        padding-top: 2rem;
+        padding: 2.5rem;
+
+        h2{
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 0.46rem;
+            color: v.$dark-grayish-blue;
+        }
+        h1{
+              font-family: 'Fraunces', serif;
+              font-weight: 700;
+              font-size: 2.95rem;
+              margin-top: 1.4rem 0;
+              margin-bottom: 1.7rem;
+              line-height: 3.1rem;
+              color: v.$very-dark-blue;
+        }
+        .description{
+            color: v.$dark-grayish-blue;
+            font-size: 1.29rem;
+            line-height: 2.26rem;
+        }
+        .price-wrapper{
+            display: flex;
+            align-items: center;
+            margin-top: 4.45rem;
+            margin-bottom: 1.5rem;
+           // border: 1px solid maroon temporary;//
+            price{
+                font-family: 'Fraunces', serif;
+              font-weight: 700;
+              font-size: 3.05rem;
+              color: v.$dark-cyan;
+            }
+            .old-price{
+                color: v.$dark-grayish-blue;
+                text-decoration: line-through;
+                margin-left: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+        .btn{
+            background-color: v.$dark-cyan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: v.$white;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding: 1.5rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+
+            &hover{
+                background-color: v.$dark-cyan-hover;
+            }
+        }
+    }   
+}
+
+}
+
+*/
+@media screen and (min-width: 1440px) {
+  .container {
+    align-items: center;
+    height: 100vh;
+  }
+  .container .card {
+    display: flex;
+    max-width: 60rem;
+  }
+  .container .card .hero {
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+  }
+  .container .card .mobile {
+    display: none;
+  }
+  .container .card .desktop {
+    display: unset;
+  }
+  .container .card .card-wrapper {
+    padding: 3.1rem;
+    width: 90%;
+  }
+  .container .card .card-wrapper h2 {
+    letter-spacing: 0.5rem;
+  }
+  .container .card .card-wrapper h1 {
+    margin-top: 2rem;
+    margin-bottom: 2.4rem;
+    font-size: 3rem;
+    line-height: 3.19rem;
+  }
+  .container .card .card-wrapper .description {
+    font-size: 1.4rem;
+  }
+  .container .card .card-wrapper .price-wrapper {
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+  }
+}
+/*@media screen and (min-width: 1440px) {
+    .container{
+        align-items: center;
+        height: 100vh;
+
+        .card{
+            display: flex;
+
+            .mobile{
+                display: none;
+            }
+
+            .desktop{
+                display: unset;
+            }
+
+
+
+        }
+
+
+
+    }
+}
+*/
+/*@use './general';
+@use './card';*//*# sourceMappingURL=style.css.map */
