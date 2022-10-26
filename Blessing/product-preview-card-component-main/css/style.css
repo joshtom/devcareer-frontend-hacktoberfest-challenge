@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: hsl(30deg, 38%, 92%);
+  line-height: 1.8em;
+}
+
+main {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 0 15px 0;
+}
+main div, main h1, main p {
+  padding: 0 0 15px 0;
+}
+main p {
+  color: hsl(228deg, 12%, 48%);
+}
+main .card {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 90%;
+  border-radius: 10px;
+}
+main .card div > #product-img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main .card .body {
+  padding: 0 20px;
+}
+main .card .body #name {
+  color: hsl(212deg, 21%, 14%);
+}
+main .card .body #price {
+  display: flex;
+  align-items: center;
+  color: hsl(158deg, 36%, 37%);
+}
+main .card .body #price #st {
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration-line: line-through;
+  margin-left: 20px;
+  color: hsl(228deg, 12%, 48%);
+}
+main .card .body #perfume {
+  letter-spacing: 0.4rem;
+}
+main .card .body h1 {
+  font-family: "Fraunces", serif;
+}
+main .card .body #cart-icon {
+  margin-right: 10px;
+}
+main .card .body .addtocart {
+  padding: 24px 0 24px 0;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(158deg, 36%, 37%);
+  cursor: pointer;
+  height: 2em;
+  width: 100%;
+  transition: transform 0.1s;
+}
+main .card .body .addtocart:hover {
+  transform: scale(1.04);
+}
+main .card .body .pretext {
+  color: hsl(0deg, 0%, 100%);
+}
+main .card-2 {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 45vw;
+  max-height: 100%;
+  border-radius: 10px;
+  display: none;
+  margin-top: 50px;
+}
+main .card-2 div > #product-img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main .card-2 .body {
+  margin: 0 20px;
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+main .card-2 .body #name {
+  color: hsl(212deg, 21%, 14%);
+  font-size: 35px;
+  line-height: 0.9;
+}
+main .card-2 .body #price {
+  display: flex;
+  align-items: center;
+  color: hsl(158deg, 36%, 37%);
+  margin: 10px 0 10px 0;
+}
+main .card-2 .body #price #st {
+  font-size: 14px;
+  font-weight: lighter;
+  text-decoration-line: line-through;
+  margin-left: 20px;
+  color: hsl(228deg, 12%, 48%);
+}
+main .card-2 .body #perfume {
+  letter-spacing: 0.25rem;
+}
+main .card-2 .body h1 {
+  font-family: "Fraunces", serif;
+}
+main .card-2 .body #cart-icon {
+  margin-right: 10px;
+}
+main .card-2 .body .addtocart {
+  padding: 24px 0 24px 0;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(158deg, 36%, 37%);
+  cursor: pointer;
+  height: 2em;
+  width: 100%;
+  transition: transform 0.1s;
+}
+main .card-2 .body .addtocart:hover {
+  transform: scale(1.04);
+}
+main .card-2 .body .pretext {
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    min-height: 100vh;
+  }
+  main .card {
+    display: none;
+  }
+  main .card-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main div {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
