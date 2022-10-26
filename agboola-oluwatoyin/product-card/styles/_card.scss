@@ -1,0 +1,192 @@
+@use './variables' as v;
+
+.container{
+   // border: 1px solid magenta; //temporary
+    padding: 1.6rem;
+    padding-top: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        background-color: v.$white;
+        border-radius: 1rem;
+        max-width: 45rem;
+
+        .hero{
+            width: 100%;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            
+        }
+
+        .desktop{
+            display: none;
+        }
+        
+
+        .card-wrapper{
+            padding: 2.5rem;
+            padding-top: 2rem;
+
+            h2{
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                letter-spacing: 0.46rem;
+                color: v.$dark-grayish-blue;
+            }
+
+            h1{
+                font-family: 'Fraunces', serif;
+                font-weight: 700;
+                font-size: 2.95rem;
+                margin-top: 1.4rem;
+                margin-bottom: 1.7rem;
+                line-height: 3.1rem;
+                color: v.$very-dark-blue;
+            }
+
+            .description{
+                color: v.$dark-grayish-blue;
+                font-size: 1.29rem;
+                line-height: 2.26rem;
+            }
+
+            .price-wrapper{
+                //border: 1px solid maroon;//
+                margin-top: 4.45rem;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: center;
+                
+                .price{
+                    font-family: 'Fraunces', serif;
+                font-weight: 700;
+                font-size: 3.05rem;
+                color: v.$dark-cyan;
+                }
+
+                .old-price{
+                    color: v.$dark-grayish-blue;
+                    text-decoration: line-through;
+                    margin-left: 2.4rem;
+                    font-size: 1.3rem;
+                }
+
+            }
+
+
+            .btn{
+                background-color: v.$dark-cyan;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                color: v.$white;
+                font-size: 1.4rem;
+                font-weight: 500;
+                padding: 1.5rem;
+                border-radius: 0.6rem;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: v.$dark-cyan-hover;
+                }
+            }
+
+        }
+
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+/*@use './variables' as v;
+
+.container{
+   // border: 1px solid magenta; temporary//
+    padding: 2.6rem;
+    padding-top:5px;
+.card{
+    background-color: v.$white;
+    border-radius: 1rem;
+    .hero{
+        width:100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    .card-wrapper{
+        padding-top: 2rem;
+        padding: 2.5rem;
+
+        h2{
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 0.46rem;
+            color: v.$dark-grayish-blue;
+        }
+        h1{
+              font-family: 'Fraunces', serif;
+              font-weight: 700;
+              font-size: 2.95rem;
+              margin-top: 1.4rem 0;
+              margin-bottom: 1.7rem;
+              line-height: 3.1rem;
+              color: v.$very-dark-blue;
+        }
+        .description{
+            color: v.$dark-grayish-blue;
+            font-size: 1.29rem;
+            line-height: 2.26rem;
+        }
+        .price-wrapper{
+            display: flex;
+            align-items: center;
+            margin-top: 4.45rem;
+            margin-bottom: 1.5rem;
+           // border: 1px solid maroon temporary;//
+            price{
+                font-family: 'Fraunces', serif;
+              font-weight: 700;
+              font-size: 3.05rem;
+              color: v.$dark-cyan;
+            }
+            .old-price{
+                color: v.$dark-grayish-blue;
+                text-decoration: line-through;
+                margin-left: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+        .btn{
+            background-color: v.$dark-cyan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            color: v.$white;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding: 1.5rem;
+            border-radius: 0.6rem;
+            cursor: pointer;
+
+            &hover{
+                background-color: v.$dark-cyan-hover;
+            }
+        }
+    }   
+}
+
+}
+
+*/
