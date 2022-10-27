@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+picture, img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.fs-2{
+    font-size: 2rem;
+}
+.fs-01{
+    font-size: 1rem;
+    border: 1px solid red;
+    line-height: .1em;
+}
+.fs-1{
+    font-size: .9rem;
+    line-height: 1.5em;
+}
+.fw-bold{
+    font-weight: 700;
+}
+.fw-normal{
+    font-weight: 400;
+}
+.clr-white{
+    color: hsl(0, 0%, 100%);
+}
+.clr-white-mp{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.clr-white-st{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.ff-inter{
+    font-family: 'Inter', sans-serif
+}
+.ff-fraunces{
+    font-family: 'Fraunces', serif;
+}
+.main-title, .main-desc{
+    padding: 1rem 0;
+}
+.highlight{
+    color: hsl(277, 64%, 61%);
+}
+.images{
+    background-color: hsl(277, 64%, 61%);
+}
+.images img{
+    opacity: .5;
+}
+.wrapper{
+    background-color: hsl(233, 47%, 7%);
+    padding: 2rem 0;
+}
+main{
+    background-color: hsl(244, 38%, 16%);
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 370px;
+
+}
+.content{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.stats .fs-2{
+    font-size: 1.5rem;
+}
+.stats .fs-1{
+    font-size: .7rem;
+    letter-spacing: .2em;
+}
+.row{
+    margin: 1.5rem 0;
+}
+
+@media only screen and (min-width: 1100px){
+    .wrapper{
+        height: 100vh;
+        max-width: 1440px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        max-height: 600px;
+        max-width: none;
+        width: 80%;
+
+        display: flex;
+        flex-direction: row-reverse;
+        
+        
+    }
+    .stats{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .content, .images{
+        flex: 0 0 50%;
+    }
+    .content{
+        padding: 0 4rem;
+    }
+}
