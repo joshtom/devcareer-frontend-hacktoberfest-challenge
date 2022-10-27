@@ -1,0 +1,142 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    background: #F3EAE3;
+    height: 100vh;
+}
+
+.parent {
+    overflow: hidden;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    margin: 20rem;
+    border-radius: 10px;
+    
+}
+
+.img {
+    flex: 1;
+}
+
+.desktop-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box {
+    flex: 1;
+    padding-top: 15px;
+    padding-left: 30px;
+    position: relative;
+    top: 0;
+}
+
+p {
+    font-size: 21px;
+    color: #8E8F93;
+}
+
+.box h1 {
+    margin: 0 auto;
+    font-size: 46px;
+    line-height: 45px;
+}
+
+.box-text {
+    font-size: 21px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.price {
+    color: #3D8168;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 30px;
+    
+}
+
+.old-price {
+ text-decoration: line-through;
+ color:#444;
+ font-size: 12px;
+ margin: 15px;
+
+}
+
+.btn {
+    width: 66%;
+    height: 40px;
+    background-color: #3D8168;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn img {
+    top: 10px;
+    margin-bottom: 8px;
+    position: relative;
+    left: 0rem;
+}
+
+@media screen and (max-width: 650px) {
+    .parent {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    .img {
+        height: 16rem;
+    }
+    
+    .box {
+        padding-left: 20px;
+    }
+    
+    p {
+        font-size: 21px;
+        color: #8E8F93;
+    }
+    
+    .box h1 {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 37px;
+    }
+
+    .box-text {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .prices {
+        margin: 30px 0;
+    }
+    
+    .price {
+        font-size: 40px;  
+    }
+    
+    .old-price {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 90%;
+        height: 50px;
+    }
+    .btn img {
+        top: 15px;
+        margin-bottom: 12px;
+    }
+}
