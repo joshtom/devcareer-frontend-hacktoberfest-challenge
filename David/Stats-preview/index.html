@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <div class="images">
+          <picture>
+            <source
+              media="(max-width:650px)"
+              srcset="images/image-header-mobile.jpg"
+              alt="3 girls working in office"
+            />
+            <img
+              src="images/image-header-desktop.jpg"
+              alt="3 girls working in office"
+            />
+          </picture>
+        </div>
+        <div class="content">
+          <h1 class="fs-2 fw-bold clr-white ff-inter main-title">
+            Get <span class="highlight">insights</span> that help your business
+            grow.
+          </h1>
+          <p class="fs-1 fw-normal clr-white-mp ff-inter main-desc">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <div class="stats">
+            <div class="row">
+              <p class="fs-2 fw-bold ff-inter clr-white">10k+</p>
+              <p class="fs-1 fw-normal clr-white-st ff-inter">COMPANIES</p>
+            </div>
+
+            <div class="row">
+              <p class="fs-2 fw-bold ff-inter clr-white">314</p>
+              <p class="fs-1 fw-normal clr-white-st ff-inter">TEMPLATES</p>
+            </div>
+
+            <div class="row">
+              <p class="fs-2 fw-bold ff-inter clr-white">12M+</p>
+              <p class="fs-1 fw-normal clr-white-st ff-inter">QUERIES</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
