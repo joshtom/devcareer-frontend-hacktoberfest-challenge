@@ -1,5 +1,5 @@
 ## How to Contribute
-
+- [Figma Link](https://www.figma.com/file/oxz27W82DmlDFy9MvdF4IP/Digit)
 * Fork this repo.
 * Clone the forked repo.
 * Create a new branch.
