@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-dark-cyan: hsl(185, 75%, 39%);
+  --primary-desaturated-blue: hsl(229, 23%, 23%);
+  --primary-dark-grayish-blue:hsl(227, 10%, 46%);
+
+  --neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--primary-dark-cyan);
+  background-image: url(.././images/bg-pattern-top.svg), url(.././images/bg-pattern-bottom.svg);
+  background-position: -45vw -20vh, 45vw 55vh;
+  background-repeat: no-repeat, no-repeat;
+  flex-direction: column;
+  background-size: contain;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #ffffff;
+  max-width: 90%;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  min-height: 150px;
+  background-image: url(.././images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-info img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  margin-top: -50px;
+  margin-bottom: 15px;
+}
+
+.card-info__profile {
+  text-align: center;
+  color: var(--primary-dark-grayish-blue);
+  margin-bottom: 20px;
+}
+
+.card-info__profile__name {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.card-info__profile__name h1 {
+  font-size: 1.2rem;
+  color: var(--primary-desaturated-blue);
+}
+
+.card-info__profile__region {
+  font-size: .9rem;
+}
+
+.card-info__socials {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  border-top: 1px solid hsl(0deg 0% 59% / 30%);
+}
+
+.card-info__social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card-info__social span:first-child {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary-desaturated-blue);
+  line-height: 1.8em;
+}
+
+.card-info__social span {
+  font-size: .7rem;
+  color: var(--primary-dark-grayish-blue);
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px){
+  body {
+    background-position: -55vw -25vh, 55vw 45vh;
+  }
+
+  main {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 1024px){
+  body {
+    background-position: -20vw -45vh, 50vw 45vh;
+  }
+}
